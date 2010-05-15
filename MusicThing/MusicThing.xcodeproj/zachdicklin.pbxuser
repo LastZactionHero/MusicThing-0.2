@@ -75,34 +75,34 @@
 	5CF67D05119F230E001A3FEF /* songs_controller.rb */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1011, 1807}}";
-			sepNavSelRange = "{2775, 0}";
-			sepNavVisRange = "{2057, 797}";
+			sepNavSelRange = "{2831, 0}";
+			sepNavVisRange = "{2072, 785}";
 		};
 	};
 	5CF67D0A119F230E001A3FEF /* song.rb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 1248}}";
-			sepNavSelRange = "{2256, 0}";
-			sepNavVisRange = "{1218, 1039}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1209}}";
+			sepNavSelRange = "{667, 0}";
+			sepNavVisRange = "{280, 1190}";
 		};
 	};
 	5CF67D0D119F230E001A3FEF /* songs.html.erb */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
-			sepNavSelRange = "{376, 0}";
-			sepNavVisRange = "{0, 474}";
+			sepNavSelRange = "{391, 0}";
+			sepNavVisRange = "{0, 422}";
 		};
 	};
 	5CF67D0F119F230E001A3FEF /* edit.html.erb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 550}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 782}";
 		};
 	};
 	5CF67D10119F230E001A3FEF /* index.html.erb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 550}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 761}";
 		};
@@ -116,16 +116,16 @@
 	};
 	5CF67D12119F230E001A3FEF /* show.html.erb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 550}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 471}";
 		};
 	};
 	5CF67D23119F230E001A3FEF /* routes.rb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 676}}";
-			sepNavSelRange = "{596, 15}";
-			sepNavVisRange = "{0, 2232}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 702}}";
+			sepNavSelRange = "{2109, 4}";
+			sepNavVisRange = "{770, 1863}";
 			sepNavWindowFrame = "{{61, 281}, {725, 450}}";
 		};
 	};
@@ -138,16 +138,16 @@
 	};
 	5CF67D78119F239E001A3FEF /* viewer.html.erb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 2834}}";
-			sepNavSelRange = "{4551, 34}";
-			sepNavVisRange = "{4187, 890}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 3016}}";
+			sepNavSelRange = "{4999, 0}";
+			sepNavVisRange = "{4620, 730}";
 		};
 	};
 	5CF67D79119F2484001A3FEF /* viewer.css */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 1157}}";
-			sepNavSelRange = "{1119, 5}";
-			sepNavVisRange = "{662, 799}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1144}}";
+			sepNavSelRange = "{1001, 0}";
+			sepNavVisRange = "{248, 775}";
 		};
 	};
 	5CF67D7A119F313A001A3FEF /* PBXTextBookmark */ = {
@@ -155,7 +155,7 @@
 		fRef = 5CF67D05119F230E001A3FEF /* songs_controller.rb */;
 		name = "songs_controller.rb: 90";
 		rLen = 0;
-		rLoc = 2849;
+		rLoc = 2852;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 820;
@@ -175,7 +175,7 @@
 		fRef = 5CF67D23119F230E001A3FEF /* routes.rb */;
 		name = "routes.rb: 2";
 		rLen = 0;
-		rLoc = 50;
+		rLoc = 106;
 		rType = 0;
 		vrLen = 2007;
 		vrLoc = 0;
@@ -238,7 +238,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 19";
 		rLen = 0;
-		rLoc = 5459;
+		rLoc = 5660;
 		rType = 0;
 		vrLen = 248;
 		vrLoc = 0;
@@ -248,7 +248,7 @@
 		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
 		name = "viewer.css: 29";
 		rLen = 0;
-		rLoc = 383;
+		rLoc = 625;
 		rType = 0;
 		vrLen = 785;
 		vrLoc = 342;
@@ -301,7 +301,7 @@
 	};
 	5CF67D94119F37DE001A3FEF /* uploader.html.erb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 550}}";
 			sepNavSelRange = "{0, 37}";
 			sepNavVisRange = "{0, 640}";
 		};
@@ -315,14 +315,14 @@
 	};
 	5CF67D96119F4FCC001A3FEF /* uploader_complete.html.erb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 550}}";
 			sepNavSelRange = "{63, 0}";
 			sepNavVisRange = "{0, 110}";
 		};
 	};
 	5CF67D97119F55B6001A3FEF /* playlist_generate.html.erb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 550}}";
 			sepNavSelRange = "{0, 38}";
 			sepNavVisRange = "{0, 578}";
 		};
@@ -330,15 +330,22 @@
 	5CF67D98119F5738001A3FEF /* playlist.css */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1011, 741}}";
-			sepNavSelRange = "{505, 0}";
+			sepNavSelRange = "{587, 0}";
 			sepNavVisRange = "{0, 678}";
 		};
 	};
 	5CF67D99119F6093001A3FEF /* player_generate.html.erb */ = {
 		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1328, 550}}";
+			sepNavSelRange = "{103, 21}";
+			sepNavVisRange = "{0, 218}";
+		};
+	};
+	5CF67D9A119F61CF001A3FEF /* player.css */ = {
+		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
-			sepNavSelRange = "{40, 0}";
-			sepNavVisRange = "{0, 41}";
+			sepNavSelRange = "{255, 0}";
+			sepNavVisRange = "{0, 323}";
 		};
 	};
 }

@@ -54,7 +54,6 @@
 		5CF67D47119F230E001A3FEF /* 500.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 500.html; sourceTree = "<group>"; };
 		5CF67D48119F230E001A3FEF /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
 		5CF67D4A119F230E001A3FEF /* rails.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rails.png; sourceTree = "<group>"; };
-		5CF67D4B119F230E001A3FEF /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		5CF67D4D119F230E001A3FEF /* application.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
 		5CF67D4E119F230E001A3FEF /* controls.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = controls.js; sourceTree = "<group>"; };
 		5CF67D4F119F230E001A3FEF /* dragdrop.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dragdrop.js; sourceTree = "<group>"; };
@@ -352,7 +351,6 @@
 				5CF67D47119F230E001A3FEF /* 500.html */,
 				5CF67D48119F230E001A3FEF /* favicon.ico */,
 				5CF67D49119F230E001A3FEF /* images */,
-				5CF67D4B119F230E001A3FEF /* index.html */,
 				5CF67D4C119F230E001A3FEF /* javascripts */,
 				5CF67D52119F230E001A3FEF /* robots.txt */,
 				5CF67D53119F230E001A3FEF /* stylesheets */,

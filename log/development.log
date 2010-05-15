@@ -5636,3 +5636,84 @@ Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-15 18:35:26
 Rendering template within layouts/songs
 Rendering songs/player_generate
 Completed in 25ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/1]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-15 18:46:58) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 67ms (View: 64, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 18:46:58) [GET]
+
+ActionController::RoutingError (No route matches "/uploader" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 18:46:59) [GET]
+
+ActionController::RoutingError (No route matches "/playlist_generate/0" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 18:46:59) [GET]
+
+ActionController::RoutingError (No route matches "/player_generate/0" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-05-15 18:47:37) [GET]
+  [4;36;1mSong Load (1.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/index
+Completed in 198ms (View: 44, DB: 1) | 200 OK [http://localhost/songs]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-15 18:48:32) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-15 18:48:32) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 34ms (View: 24, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-15 18:48:32) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (6.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 37ms (View: 13, DB: 7) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-15 18:48:32) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.4ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 138ms (View: 105, DB: 1) | 200 OK [http://localhost/songs/player_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-15 18:48:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/1]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-15 18:48:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 27ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/1]

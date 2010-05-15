@@ -111,7 +111,7 @@
 		
 		if( gRequestRefreshPlaylist != null )
 		{
-			requestUrl = "playlist_generate/" + gCurrentTrackIdx;
+			requestUrl = "/songs/playlist_generate/" + gCurrentTrackIdx;
 			gRequestRefreshPlaylist.onreadystatechange = refresh_playlist_callback;
 			gRequestRefreshPlaylist.open( "GET", requestUrl, true );
 			gRequestRefreshPlaylist.send();
@@ -146,7 +146,7 @@
 		
 		if( gRequestRefreshPlayer != null )
 		{
-			requestUrl = "player_generate/" + gCurrentTrackIdx;
+			requestUrl = "/songs/player_generate/" + gCurrentTrackIdx;
 			gRequestRefreshPlayer.onreadystatechange = refresh_player_callback;
 			gRequestRefreshPlayer.open( "GET", requestUrl, true );
 			gRequestRefreshPlayer.send();
@@ -221,7 +221,7 @@
 	</div>
 	
 	<div class="uploadBox" id="divUploadBox" style="visibility:hidden">
-		<iframe src="uploader" frameborder=0 height=100 width=350 scrolling=no marginheight=0 marginwidth=0 align=top>
+		<iframe src="/songs/uploader/" frameborder=0 height=100 width=350 scrolling=no marginheight=0 marginwidth=0 align=top>
 	</div>
 </div>
 
