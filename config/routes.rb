@@ -1,4 +1,5 @@
-ActionController::Routing::Routes.draw do |map|
+ActionController::Routing::Routes.draw do |map|\
+  map.root :controller => 'songs', :action => 'viewer'
   map.song_viewer 'songs/viewer/', :controller => 'songs', :action => 'viewer'
   map.song_uploader 'songs/uploader/', :controller => 'songs', :action => 'uploader'
   map.song_uploader_process 'songs/uploader_process/', :controller => 'songs', :action => 'uploader_process'
