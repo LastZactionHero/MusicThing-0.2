@@ -1,0 +1,228 @@
+<%= stylesheet_link_tag "viewer" %>
+
+<body onLoad="javascript:startup()">
+
+<script type="text/javascript">
+
+	//----------------------------------------------
+	// Global Variables
+	//----------------------------------------------
+	gUploadBoxVisible = false;
+	gIsUploading = false;
+	gPeriodCount = 0;
+	gRequestRefreshPlayist = null;
+	gRequestRefreshPlayer = null;
+	gCurrentTrackIdx = 0;
+	
+			
+	//----------------------------------------------
+	// Page Startup Functions
+	//----------------------------------------------
+	function startup()
+	{
+		update_uploader_button();
+		refresh_playlist();
+		refresh_player();
+	} // startup()
+	
+	
+	//----------------------------------------------
+	// Toggle visibility state of upload track box
+	//----------------------------------------------
+	function toggle_upload_box()
+	{
+		if( gUploadBoxVisible == false && gIsUploading == false )
+		{
+			gUploadBoxVisible = true;
+			document.getElementById( "divUploadBox" ).style.visibility = "visible";
+		}
+		else
+		{
+			gUploadBoxVisible = false;
+			document.getElementById( "divUploadBox" ).style.visibility = "hidden";
+		}
+	} // toggle_upload_box()
+
+
+	//----------------------------------------------
+	// Set page state as uploading
+	//----------------------------------------------
+	function set_as_uploading()
+	{
+		if( gUploadBoxVisible == true ) toggle_upload_box();
+		gIsUploading = true;
+		update_uploader_button();
+	} // set_as_uploading()
+	
+	
+	//----------------------------------------------
+	// Set Page State as upload complete
+	//----------------------------------------------
+	function set_as_upload_complete()
+	{
+		gIsUploading = false;
+		update_uploader_button();
+		refresh_playlist();
+	} // set_as_upload_complete()
+	
+	
+	//----------------------------------------------
+	// Set the current track
+	//----------------------------------------------
+	function set_track_idx( idx )
+	{
+		gCurrentTrackIdx = idx;
+		refresh_playlist();
+		refresh_player();
+	} // set_track_idx()
+	
+	
+	//----------------------------------------------
+	// Update content of Upload button
+	//----------------------------------------------
+	function update_uploader_button()
+	{
+		if( gIsUploading == true )
+		{
+			uploadingStr = "Uploading";
+			for( i = 0; i < gPeriodCount; i++ )
+			{
+				uploadingStr = uploadingStr + ".";
+			}
+			document.getElementById( "divUploadButton" ).innerHTML = uploadingStr;
+			
+			gPeriodCount = ( gPeriodCount + 1 ) % 4;
+			setTimeout( "update_uploader_button()", 500 );
+		}
+		else
+		{
+			document.getElementById( "divUploadButton" ).innerHTML = "<a href=\"javascript:toggle_upload_box()\">Upload</a>";
+		}
+	} // update_uploader_button()
+	
+	
+	//----------------------------------------------
+	// Send request to refresh playlist
+	//----------------------------------------------
+	function refresh_playlist()
+	{
+		// Send request for playlist generation
+		gRequestRefreshPlaylist = new XMLHttpRequest();
+		
+		if( gRequestRefreshPlaylist != null )
+		{
+			requestUrl = "playlist_generate/" + gCurrentTrackIdx;
+			gRequestRefreshPlaylist.onreadystatechange = refresh_playlist_callback;
+			gRequestRefreshPlaylist.open( "GET", requestUrl, true );
+			gRequestRefreshPlaylist.send();
+		}
+		else
+		{
+			alert( "Error creating request!" );
+		}
+	} // refresh_playlist()
+	
+	
+	//----------------------------------------------
+	// Callback from refresh_player()
+	//----------------------------------------------
+	function refresh_playlist_callback()
+	{
+		if( is_response_valid( gRequestRefreshPlaylist ) )
+		{
+			document.getElementById( 'divPlaylistList' ).innerHTML = gRequestRefreshPlaylist.responseText;
+			gRequestRefreshPlaylist = null;
+		}
+	} // refresh_playlist_callback()
+	
+	
+	//----------------------------------------------
+	// Send request to refresh player
+	//----------------------------------------------
+	function refresh_player()
+	{
+		// Send request for player generation
+		gRequestRefreshPlayer = new XMLHttpRequest();
+		
+		if( gRequestRefreshPlayer != null )
+		{
+			requestUrl = "player_generate/" + gCurrentTrackIdx;
+			gRequestRefreshPlayer.onreadystatechange = refresh_player_callback;
+			gRequestRefreshPlayer.open( "GET", requestUrl, true );
+			gRequestRefreshPlayer.send();
+		}
+		else
+		{
+			alert( "Error creating request!" );
+		}
+	} // refresh_player()
+	
+	
+	//----------------------------------------------
+	// Callback from refresh_player()
+	//----------------------------------------------
+	function refresh_player_callback()
+	{
+		if( is_response_valid( gRequestRefreshPlayer ) )
+		{
+			document.getElementById( 'divPlayer' ).innerHTML = gRequestRefreshPlayer.responseText;
+			gRequestRefreshPlayer = null;
+		}
+	} // refresh_player_callback()
+	
+	
+	//-------------------------------------------
+	// Is HTML Response Valid
+	//-------------------------------------------
+	function is_response_valid( response )
+	{
+		ret = false;
+		
+		if( response != null
+		    && response.status == 200
+			&& response.readyState == 4 )
+		{
+			ret = true;
+		}
+		
+		return ret;
+	} // is_response_valid()
+	
+	
+	//-------------------------------------------
+	// Forward to next track
+	//-------------------------------------------
+	function next_track()
+	{
+		set_track_idx( gCurrentTrackIdx + 1 );
+	} // next_track()
+	
+	
+</script>
+
+
+
+<div class="playlistBackground" >
+
+	<div class="playlistTitle">
+	
+	</div>
+	
+	<div class="playlistList" id="divPlaylistList">
+	
+	</div>
+	
+	<div class="uploadButton" id="divUploadButton">
+
+	</div>
+	
+	<div class="playerBox" id="divPlayer">
+
+	</div>
+	
+	<div class="uploadBox" id="divUploadBox" style="visibility:hidden">
+		<iframe src="uploader" frameborder=0 height=100 width=350 scrolling=no marginheight=0 marginwidth=0 align=top>
+	</div>
+</div>
+
+</body>

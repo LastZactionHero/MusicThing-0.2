@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  artist: MyString
+  album: MyString
+  filename: MyString
+  art_filename: MyString
+  submitter_name: MyString
+  playlist_idx: 1
+
+two:
+  title: MyString
+  artist: MyString
+  album: MyString
+  filename: MyString
+  art_filename: MyString
+  submitter_name: MyString
+  playlist_idx: 1

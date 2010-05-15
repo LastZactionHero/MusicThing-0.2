@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag "uploader" %>
+
+<script type="text/javascript">
+	
+	function upload_song()
+	{
+		parent.set_as_uploading();
+		document.getElementById( "formUploadSong" ).submit();
+	}
+</script>
+
+<form id="formUploadSong" action="uploader_process" enctype="multipart/form-data" method="post" >
+	<table border=0px>
+		<tr><td>MP3 File:</td><td><input id="data_file" name="data_file" size="20" type="file"></td></tr>
+		<tr><td>Your Name:</td><td><input id="submitter_name" name="submitter_name" size="25" type="text"></td></tr>
+		<tr><td></td><td><a style="color:black" href="javascript:upload_song()">Upload</a></td></tr>
+	</table>
+</form>

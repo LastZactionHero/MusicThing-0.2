@@ -1,0 +1,25 @@
+a:link { 
+	color: #FFFFFF;
+	}
+a:visited { 
+	color: #FFFFFF;
+	}
+a:hover { 
+	color: #000000;
+	}
+a:active { 
+	color: #FFFFFF;
+	}
+
+.playerBox {
+  top:				505px;
+  left:				50px;
+  width:			295px;
+  height:			20px;
+  position:			absolute;
+  overflow:			hidden;
+  color:			white;
+  font-family:		Verdana;
+  font-size:		16px; 
+}
+

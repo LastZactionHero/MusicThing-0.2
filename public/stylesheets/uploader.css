@@ -1,0 +1,19 @@
+body { 
+  background-color: #FFFFFF; 
+  color:			black;
+  font-family:		Verdana;
+  font-size:		16px; 
+}
+
+a:link { 
+	color: #FFFFFF;
+	}
+a:visited { 
+	color: #FFFFFF;
+	}
+a:hover { 
+	color: #000000;
+	}
+a:active { 
+	color: #FFFFFF;
+	}

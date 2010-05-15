@@ -1,0 +1,57 @@
+a:link { 
+	color: #FFFFFF;
+	}
+a:visited { 
+	color: #FFFFFF;
+	}
+a:hover { 
+	color: #000000;
+	}
+a:active { 
+	color: #FFFFFF;
+	}
+
+.trackBox {
+  top:				0px;
+  left:				5px;
+  width:			440px;
+  height:			50px;
+  position:			absolute;
+  overflow:			hidden;
+  background-color:	white;
+  color:			black;
+  font-family:		Verdana;
+  font-size:		16px; 
+}
+
+.trackBoxPlaying {
+  top:				0px;
+  left:				5px;
+  width:			440px;
+  height:			50px;
+  position:			absolute;
+  overflow:			hidden;
+  background-color:	#FFD739;
+  color:			black;
+  font-family:		Verdana;
+  font-size:		16px; 
+}
+
+.trackImage {
+  top:				5px;
+  left:				5px;
+  width:			40px;
+  height:			40px;
+  position:			absolute;
+  background-image:	url('/images/blank_album_art.jpg')
+}
+
+.trackText {
+  top:				5px;
+  left:				50px;
+  width:			385px;
+  height:			40px;
+  position:			absolute;
+  font-family:		Verdana;
+  font-size:		12px;
+}

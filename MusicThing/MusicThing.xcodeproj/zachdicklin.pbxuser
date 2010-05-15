@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	5CF67CFA119F22FC001A3FEF /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		addToTargets = (
+		);
+		codeSenseManager = 5CF67CFF119F22FF001A3FEF /* Code sense */;
+		ignoreBreakpointsInProjectsDict = {
+		};
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					833,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 295645514;
+			PBXWorkspaceStateSaveDate = 295645514;
+		};
+		perUserProjectItems = {
+			5CF67D7A119F313A001A3FEF = 5CF67D7A119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D7B119F313A001A3FEF = 5CF67D7B119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D7C119F313A001A3FEF = 5CF67D7C119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D7D119F313A001A3FEF = 5CF67D7D119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D7F119F313A001A3FEF = 5CF67D7F119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D80119F313A001A3FEF = 5CF67D80119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D81119F313A001A3FEF = 5CF67D81119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D82119F313A001A3FEF = 5CF67D82119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D83119F313A001A3FEF = 5CF67D83119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D84119F313A001A3FEF = 5CF67D84119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D86119F313A001A3FEF = 5CF67D86119F313A001A3FEF /* PBXTextBookmark */;
+			5CF67D90119F314A001A3FEF /* PBXTextBookmark */ = 5CF67D90119F314A001A3FEF /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5CF67CFE119F22FF001A3FEF /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	5CF67CFE119F22FF001A3FEF /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5CF67CFF119F22FF001A3FEF /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	5CF67D04119F230E001A3FEF /* application_controller.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 430}";
+		};
+	};
+	5CF67D05119F230E001A3FEF /* songs_controller.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1807}}";
+			sepNavSelRange = "{2775, 0}";
+			sepNavVisRange = "{2057, 797}";
+		};
+	};
+	5CF67D0A119F230E001A3FEF /* song.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1248}}";
+			sepNavSelRange = "{2256, 0}";
+			sepNavVisRange = "{1218, 1039}";
+		};
+	};
+	5CF67D0D119F230E001A3FEF /* songs.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{376, 0}";
+			sepNavVisRange = "{0, 474}";
+		};
+	};
+	5CF67D0F119F230E001A3FEF /* edit.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 782}";
+		};
+	};
+	5CF67D10119F230E001A3FEF /* index.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 761}";
+		};
+	};
+	5CF67D11119F230E001A3FEF /* new.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 747}";
+		};
+	};
+	5CF67D12119F230E001A3FEF /* show.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 471}";
+		};
+	};
+	5CF67D23119F230E001A3FEF /* routes.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 676}}";
+			sepNavSelRange = "{596, 15}";
+			sepNavVisRange = "{0, 2232}";
+			sepNavWindowFrame = "{{61, 281}, {725, 450}}";
+		};
+	};
+	5CF67D54119F230E001A3FEF /* scaffold.css */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 715}}";
+			sepNavSelRange = "{146, 18}";
+			sepNavVisRange = "{168, 721}";
+		};
+	};
+	5CF67D78119F239E001A3FEF /* viewer.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 2834}}";
+			sepNavSelRange = "{4551, 34}";
+			sepNavVisRange = "{4187, 890}";
+		};
+	};
+	5CF67D79119F2484001A3FEF /* viewer.css */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1157}}";
+			sepNavSelRange = "{1119, 5}";
+			sepNavVisRange = "{662, 799}";
+		};
+	};
+	5CF67D7A119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D05119F230E001A3FEF /* songs_controller.rb */;
+		name = "songs_controller.rb: 90";
+		rLen = 0;
+		rLoc = 2849;
+		rType = 0;
+		vrLen = 1135;
+		vrLoc = 820;
+	};
+	5CF67D7B119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D0F119F230E001A3FEF /* edit.html.erb */;
+		name = "edit.html.erb: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 782;
+		vrLoc = 0;
+	};
+	5CF67D7C119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D23119F230E001A3FEF /* routes.rb */;
+		name = "routes.rb: 2";
+		rLen = 0;
+		rLoc = 50;
+		rType = 0;
+		vrLen = 2007;
+		vrLoc = 0;
+	};
+	5CF67D7D119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D7E119F313A001A3FEF /* view_playlist.erb */;
+		name = "view_playlist.erb: 155";
+		rLen = 144;
+		rLoc = 3841;
+		rType = 0;
+		vrLen = 1021;
+		vrLoc = 3432;
+	};
+	5CF67D7E119F313A001A3FEF /* view_playlist.erb */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = view_playlist.erb;
+		path = /Users/zachdicklin/www/musicthing0.1/app/views/songs/view_playlist.erb;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 2301}}";
+			sepNavSelRange = "{721, 335}";
+			sepNavVisRange = "{439, 1122}";
+			sepNavWindowFrame = "{{38, 302}, {725, 450}}";
+		};
+	};
+	5CF67D7F119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D12119F230E001A3FEF /* show.html.erb */;
+		name = "show.html.erb: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 471;
+		vrLoc = 0;
+	};
+	5CF67D80119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D0D119F230E001A3FEF /* songs.html.erb */;
+		name = "songs.html.erb: 8";
+		rLen = 0;
+		rLoc = 376;
+		rType = 0;
+		vrLen = 474;
+		vrLoc = 0;
+	};
+	5CF67D81119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D54119F230E001A3FEF /* scaffold.css */;
+		name = "scaffold.css: 6";
+		rLen = 18;
+		rLoc = 146;
+		rType = 0;
+		vrLen = 780;
+		vrLoc = 0;
+	};
+	5CF67D82119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 19";
+		rLen = 0;
+		rLoc = 5459;
+		rType = 0;
+		vrLen = 248;
+		vrLoc = 0;
+	};
+	5CF67D83119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
+		name = "viewer.css: 29";
+		rLen = 0;
+		rLoc = 383;
+		rType = 0;
+		vrLen = 785;
+		vrLoc = 342;
+	};
+	5CF67D84119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D85119F313A001A3FEF /* uploadFile.html.erb */;
+		rLen = 0;
+		rLoc = 2147483647;
+		rType = 0;
+	};
+	5CF67D85119F313A001A3FEF /* uploadFile.html.erb */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = uploadFile.html.erb;
+		path = /Users/zachdicklin/www/musicthing0.1/app/views/upload/uploadFile.html.erb;
+		sourceTree = "<absolute>";
+	};
+	5CF67D86119F313A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D87119F313A001A3FEF /* uploadFile.html.erb */;
+		name = "uploadFile.html.erb: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 122;
+		vrLoc = 0;
+	};
+	5CF67D87119F313A001A3FEF /* uploadFile.html.erb */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text;
+		name = uploadFile.html.erb;
+		path = /Users/zachdicklin/www/musicthing0.1/app/views/upload/uploadFile.html.erb;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 122}";
+		};
+	};
+	5CF67D90119F314A001A3FEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D87119F313A001A3FEF /* uploadFile.html.erb */;
+		name = "uploadFile.html.erb: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 122;
+		vrLoc = 0;
+	};
+	5CF67D94119F37DE001A3FEF /* uploader.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{0, 37}";
+			sepNavVisRange = "{0, 640}";
+		};
+	};
+	5CF67D95119F388F001A3FEF /* uploader.css */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{230, 0}";
+			sepNavVisRange = "{0, 230}";
+		};
+	};
+	5CF67D96119F4FCC001A3FEF /* uploader_complete.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{63, 0}";
+			sepNavVisRange = "{0, 110}";
+		};
+	};
+	5CF67D97119F55B6001A3FEF /* playlist_generate.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{0, 38}";
+			sepNavVisRange = "{0, 578}";
+		};
+	};
+	5CF67D98119F5738001A3FEF /* playlist.css */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 741}}";
+			sepNavSelRange = "{505, 0}";
+			sepNavVisRange = "{0, 678}";
+		};
+	};
+	5CF67D99119F6093001A3FEF /* player_generate.html.erb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 575}}";
+			sepNavSelRange = "{40, 0}";
+			sepNavVisRange = "{0, 41}";
+		};
+	};
+}

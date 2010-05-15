@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag "playlist" %>
+
+<% xPosn = 0 %>
+
+<% @song_list.each do |song| %>
+
+  <% track_box_class = "trackBox" %>
+  <% if @current_track_idx.to_i == song.playlist_idx %>
+    <% track_box_class = "trackBoxPlaying" %>
+  <% end %>
+  
+  <%= "<div class = \"#{ track_box_class }\" style = \"top:#{xPosn}px\" onclick=\"javascript:set_track_idx( #{song.playlist_idx} )\">" %>
+	<div class = "trackImage" ></div>
+	<div class = "trackText">
+		<%= "#{song.title} - #{song.artist} - #{song.album} <br> #{song.submitter_name}" %>
+	</div>
+  </div>
+  
+  <% xPosn += 55 %>
+<% end %>

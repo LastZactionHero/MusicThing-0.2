@@ -1,0 +1,88 @@
+body { background-color: #000000; }
+
+
+a:link { 
+	color: #FFFFFF;
+	}
+a:visited { 
+	color: #FFFFFF;
+	}
+a:hover { 
+	color: #000000;
+	}
+a:active { 
+	color: #FFFFFF;
+	}
+
+.playerBox {
+  top:				505px;
+  left:				50px;
+  width:			295px;
+  height:			20px;
+  position:			absolute;
+  overflow:			visible;
+  color:			white;
+  font-family:		Verdana;
+  font-size:		20px; 
+  text-align:		center;
+  line-height:		15px;
+}
+	
+.playlistBackground {
+  top:		0px;
+  left:		0px;
+  width:	800px;
+  height:	550px;
+  position:absolute;
+  overflow:hidden; 
+  background-image:url('/images/background.jpg');
+}
+
+.playlistTitle {
+  top:				25px;
+  left:				50px;
+  width:			450px;
+  height:			20px;
+  position:			absolute;
+  overflow:			hidden;
+  background-color:	#65A3D7;
+}
+
+.playlistList {
+  top:				50px;
+  left:				50px;
+  width:			450px;
+  height:			450px;
+  position:			absolute;
+  overflow-x:		hidden;
+  overflow-y:		scroll;
+  background-color:	#65A3D7;
+}
+
+.uploadButton {
+  top:				505px;
+  left:				375px;
+  width:			125px;
+  height:			20px;
+  position:			absolute;
+  overflow:			hidden;
+  background-color:	#65A3D7;
+  color:			white;
+  font-family:		Verdana;
+  font-size:		20px; 
+  text-align:		center;
+  line-height:		15px;
+}
+
+.uploadBox {
+  top:				400px;
+  left:				150px;
+  width:			350px;
+  height:			100px;
+  position:			absolute;
+  overflow:			hidden;
+  background-color:	white;
+  color:			black;
+  font-family:		Verdana;
+  font-size:		16px; 
+}

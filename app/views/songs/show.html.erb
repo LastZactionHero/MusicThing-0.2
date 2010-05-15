@@ -1,0 +1,38 @@
+<p>
+  <b>Title:</b>
+  <%=h @song.title %>
+</p>
+
+<p>
+  <b>Artist:</b>
+  <%=h @song.artist %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%=h @song.album %>
+</p>
+
+<p>
+  <b>Filename:</b>
+  <%=h @song.filename %>
+</p>
+
+<p>
+  <b>Art filename:</b>
+  <%=h @song.art_filename %>
+</p>
+
+<p>
+  <b>Submitter name:</b>
+  <%=h @song.submitter_name %>
+</p>
+
+<p>
+  <b>Playlist idx:</b>
+  <%=h @song.playlist_idx %>
+</p>
+
+
+<%= link_to 'Edit', edit_song_path(@song) %> |
+<%= link_to 'Back', songs_path %>
