@@ -155,7 +155,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 253";
 		rLen = 0;
-		rLoc = 6635;
+		rLoc = 6587;
 		rType = 0;
 		vrLen = 1062;
 		vrLoc = 5988;
@@ -205,7 +205,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 253";
 		rLen = 0;
-		rLoc = 6635;
+		rLoc = 6587;
 		rType = 0;
 		vrLen = 1062;
 		vrLoc = 5988;
@@ -275,7 +275,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 304";
 		rLen = 0;
-		rLoc = 7498;
+		rLoc = 7450;
 		rType = 0;
 		vrLen = 767;
 		vrLoc = 6979;
@@ -285,7 +285,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 304";
 		rLen = 0;
-		rLoc = 7498;
+		rLoc = 7450;
 		rType = 0;
 		vrLen = 777;
 		vrLoc = 6979;
@@ -295,7 +295,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 304";
 		rLen = 0;
-		rLoc = 7498;
+		rLoc = 7450;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 6979;
@@ -305,7 +305,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 304";
 		rLen = 0;
-		rLoc = 7498;
+		rLoc = 7450;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 6979;
@@ -355,7 +355,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 304";
 		rLen = 0;
-		rLoc = 7498;
+		rLoc = 7450;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 6979;
@@ -365,7 +365,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 294";
 		rLen = 0;
-		rLoc = 7338;
+		rLoc = 7290;
 		rType = 0;
 		vrLen = 808;
 		vrLoc = 6947;
@@ -375,7 +375,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 294";
 		rLen = 0;
-		rLoc = 7338;
+		rLoc = 7290;
 		rType = 0;
 		vrLen = 808;
 		vrLoc = 6947;
@@ -465,7 +465,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 311";
 		rLen = 0;
-		rLoc = 7750;
+		rLoc = 7702;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 7078;
@@ -485,7 +485,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 246";
 		rLen = 0;
-		rLoc = 6574;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 5806;
@@ -515,7 +515,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 304";
 		rLen = 0;
-		rLoc = 7750;
+		rLoc = 7702;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 6966;
@@ -545,7 +545,7 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 243";
 		rLen = 0;
-		rLoc = 6439;
+		rLoc = 6394;
 		rType = 0;
 		vrLen = 1153;
 		vrLoc = 5646;
@@ -555,10 +555,20 @@
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
 		name = "viewer.html.erb: 301";
 		rLen = 0;
-		rLoc = 7502;
+		rLoc = 7454;
 		rType = 0;
 		vrLen = 780;
 		vrLoc = 6971;
+	};
+	5CAB149811A06B7400A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 242";
+		rLen = 0;
+		rLoc = 6394;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 5595;
 	};
 	5CD2E9BB119FD23200150900 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -710,6 +720,7 @@
 			5CAB149511A06AF500A4066D /* PBXTextBookmark */ = 5CAB149511A06AF500A4066D /* PBXTextBookmark */;
 			5CAB149611A06B0300A4066D /* PBXTextBookmark */ = 5CAB149611A06B0300A4066D /* PBXTextBookmark */;
 			5CAB149711A06B2200A4066D /* PBXTextBookmark */ = 5CAB149711A06B2200A4066D /* PBXTextBookmark */;
+			5CAB149811A06B7400A4066D /* PBXTextBookmark */ = 5CAB149811A06B7400A4066D /* PBXTextBookmark */;
 			5CD2E9BB119FD23200150900 = 5CD2E9BB119FD23200150900 /* PBXTextBookmark */;
 			5CD2E9BC119FD23200150900 = 5CD2E9BC119FD23200150900 /* PBXTextBookmark */;
 			5CD2E9BD119FD23200150900 = 5CD2E9BD119FD23200150900 /* PBXTextBookmark */;
@@ -818,9 +829,9 @@
 	};
 	5CF67D78119F239E001A3FEF /* viewer.html.erb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 4199}}";
-			sepNavSelRange = "{7502, 0}";
-			sepNavVisRange = "{6971, 780}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 3874}}";
+			sepNavSelRange = "{6394, 0}";
+			sepNavVisRange = "{5595, 1109}";
 			sepNavWindowFrame = "{{15, 323}, {725, 450}}";
 		};
 	};

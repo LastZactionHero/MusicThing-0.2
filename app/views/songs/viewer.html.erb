@@ -240,7 +240,6 @@
 	{
 		if( is_response_valid( gRequestRefreshPlayer ) )
 		{
-			alert( gRequestRefreshPlayer.responseText );
 			document.getElementById( 'divPlayer' ).innerHTML = gRequestRefreshPlayer.responseText;
 			gRequestRefreshPlayer = null;
 				
