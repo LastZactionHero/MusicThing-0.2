@@ -24,6 +24,7 @@
 		browser_detect();
 		update_uploader_button();
 		refresh_playlist();
+		refresh_player();
 	} // startup()
 
 	
@@ -137,6 +138,7 @@
 	{
 		gCurrentTrackIdx = idx;
 		refresh_playlist();
+		refresh_player();
 	} // set_track_idx()
 	
 	
@@ -187,7 +189,7 @@
 	
 	
 	//----------------------------------------------
-	// Callback from refresh_player()
+	// Callback from refresh_playlist()
 	//----------------------------------------------
 	function refresh_playlist_callback()
 	{
@@ -195,8 +197,6 @@
 		{
 			document.getElementById( 'divPlaylistList' ).innerHTML = gRequestRefreshPlaylist.responseText;
 			gRequestRefreshPlaylist = null;
-			
-			refresh_player();
 		}
 	} // refresh_playlist_callback()
 	
@@ -240,17 +240,11 @@
 	{
 		if( is_response_valid( gRequestRefreshPlayer ) )
 		{
-			if( document.getElementById( 'divPlayer' ) )
-			{
-				document.getElementById( 'divPlayer' ).innerHTML = gRequestRefreshPlayer.responseText;
-				gRequestRefreshPlayer = null;
+			alert( gRequestRefreshPlayer.responseText );
+			document.getElementById( 'divPlayer' ).innerHTML = gRequestRefreshPlayer.responseText;
+			gRequestRefreshPlayer = null;
 				
-				if( use_html5_audio() == false ) register_quicktime_player();
-			}
-			else
-			{
-				setTimeout( "refresh_player_callback()", 500 );
-			}
+			if( use_html5_audio() == false ) register_quicktime_player();		
 		}
 	} // refresh_player_callback()
 	
@@ -304,9 +298,14 @@
 
 	</div>
 	
+	<div id="divPlayer" class="playerBox">
+	
+	</div>
+	
 	<div class="uploadBox" id="divUploadBox" style="visibility:hidden">
 		<iframe src="/songs/uploader/" frameborder=0 height=100 width=350 scrolling=no marginheight=0 marginwidth=0 align=top>
 	</div>
+	
 </div>
 
 </body>
