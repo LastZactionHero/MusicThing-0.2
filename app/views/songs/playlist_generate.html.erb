@@ -5,22 +5,41 @@
 <% @song_list.each do |song| %>
 
   <% track_box_class = "trackBox" %>
+  <% track_box_height = 0 %>
+  
   <% if @current_track_idx.to_i == song.playlist_idx %>
-    <% track_box_class = "trackBoxPlaying" %>
+  
+    <% track_box_height = 105 %>
+    <%= "<div class = \"trackBoxPlaying\" style = \"top:#{xPosn}px\">" %>
+	  <div class = "trackImagePlaying" >
+	    <% art_filename = song.art_filename.to_s %>
+	    <% if art_filename.empty? %>
+	      <% art_filename = "/images/blank_album_art.jpg" %>
+	    <% end %>
+	    <%= "<img height=90 width=90 src=\"#{art_filename}\">" %>
+	  </div>
+	  <div class = "trackTextPlaying">
+		<%= "<table><tr><td>#{song.title}</td></tr><tr><td>#{song.artist} - #{song.album}</td></tr><tr><td>Submitted By: #{song.submitter_name}</td></tr><tr><td><div id=\"divPlayer\"></div></td></tr></table>" %>
+	  </div>
+    </div> 
+	
+  <% else %>
+  
+    <% track_box_height = 55 %>
+    <%= "<div class = \"trackBox\" style = \"top:#{xPosn}px\" onclick=\"javascript:set_track_idx( #{song.playlist_idx} )\">" %>
+	  <div class = "trackImage" >
+	    <% art_filename = song.art_filename.to_s %>
+	    <% if art_filename.empty? %>
+	      <% art_filename = "/images/blank_album_art.jpg" %>
+	    <% end %>
+	    <%= "<img height=40 width=40 src=\"#{art_filename}\">" %>
+	  </div>
+	  <div class = "trackText">
+		<%= "<table><tr><td>#{song.title} - #{song.artist} - #{song.album}</td></tr><tr><td>Submitted By: #{song.submitter_name}</td></tr></table>" %>
+	  </div>
+    </div> 
+	 
   <% end %>
-  
-  <%= "<div class = \"#{ track_box_class }\" style = \"top:#{xPosn}px\" onclick=\"javascript:set_track_idx( #{song.playlist_idx} )\">" %>
-	<div class = "trackImage" >
-	  <% art_filename = song.art_filename.to_s %>
-	  <% if art_filename.empty? %>
-	    <% art_filename = "/images/blank_album_art.jpg" %>
-	  <% end %>
-	  <%= "<img height=40 width=40 src=\"#{art_filename}\">" %>
-	</div>
-	<div class = "trackText">
-		<%= "#{song.title} - #{song.artist} - #{song.album} <br> #{song.submitter_name}" %>
-	</div>
-  </div>
-  
-  <% xPosn += 55 %>
+
+  <% xPosn += track_box_height %>
 <% end %>

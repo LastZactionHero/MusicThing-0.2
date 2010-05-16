@@ -279,8 +279,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>7</integer>
+									<integer>17</integer>
+									<integer>12</integer>
+									<integer>9</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -324,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>song.rb</string>
+								<string>viewer.html.erb</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>song.rb</string>
+										<string>viewer.html.erb</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5C419C75119FC45E007F1B79</string>
+										<string>5CAB147511A062BA00A4066D</string>
 										<key>history</key>
 										<array>
 											<string>5CF67D9B119F6B76001A3FEF</string>
@@ -347,22 +348,22 @@
 											<string>5CF67DA2119F6B76001A3FEF</string>
 											<string>5CF67DA3119F6B76001A3FEF</string>
 											<string>5CF67DA5119F6B76001A3FEF</string>
-											<string>5CF67DA6119F6B76001A3FEF</string>
-											<string>5CF67DA7119F6B76001A3FEF</string>
-											<string>5CF67DA9119F6B76001A3FEF</string>
 											<string>5CF67DAB119F6B76001A3FEF</string>
 											<string>5C2141E7119F93D900CB345C</string>
-											<string>5C2141E8119F93D900CB345C</string>
 											<string>5C2141FD119F9AA300CB345C</string>
 											<string>5C214215119F9EAB00CB345C</string>
 											<string>5C214216119F9EAB00CB345C</string>
 											<string>5C214225119F9FE300CB345C</string>
-											<string>5C419C26119FB72D007F1B79</string>
-											<string>5C419C53119FBE71007F1B79</string>
-											<string>5C419C6D119FC2C5007F1B79</string>
-											<string>5C419C6E119FC2C5007F1B79</string>
 											<string>5C419C6F119FC2C5007F1B79</string>
-											<string>5C419C5F119FC0BE007F1B79</string>
+											<string>5CD2E9BD119FD23200150900</string>
+											<string>5CD2E9BF119FD23200150900</string>
+											<string>5CAB146711A0598200A4066D</string>
+											<string>5CAB146C11A061C300A4066D</string>
+											<string>5CAB146D11A061C300A4066D</string>
+											<string>5CAB146E11A061C300A4066D</string>
+											<string>5CAB147011A061C300A4066D</string>
+											<string>5CAB147311A062BA00A4066D</string>
+											<string>5CAB147411A062BA00A4066D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -420,9 +421,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>5C419C29119FB72D007F1B79</string>
+				<string>5CAB146A11A0598200A4066D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>5C419C2A119FB72D007F1B79</string>
+				<string>5CAB146B11A0598200A4066D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>

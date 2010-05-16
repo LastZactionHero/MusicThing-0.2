@@ -28,7 +28,7 @@ a:active {
   top:				0px;
   left:				5px;
   width:			440px;
-  height:			50px;
+  height:			100px;
   position:			absolute;
   overflow:			hidden;
   background-color:	#FFD739;
@@ -45,11 +45,29 @@ a:active {
   position:			absolute;
 }
 
+.trackImagePlaying {
+  top:				5px;
+  left:				5px;
+  width:			90px;
+  height:			90px;
+  position:			absolute;
+}
+
 .trackText {
   top:				5px;
   left:				50px;
   width:			385px;
   height:			40px;
+  position:			absolute;
+  font-family:		Verdana;
+  font-size:		12px;
+}
+
+.trackTextPlaying {
+  top:				5px;
+  left:				100px;
+  width:			335px;
+  height:			60px;
   position:			absolute;
   font-family:		Verdana;
   font-size:		12px;
