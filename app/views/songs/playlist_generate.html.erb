@@ -10,7 +10,13 @@
   <% end %>
   
   <%= "<div class = \"#{ track_box_class }\" style = \"top:#{xPosn}px\" onclick=\"javascript:set_track_idx( #{song.playlist_idx} )\">" %>
-	<div class = "trackImage" ></div>
+	<div class = "trackImage" >
+	  <% art_filename = song.art_filename.to_s %>
+	  <% if art_filename.empty? %>
+	    <% art_filename = "/images/blank_album_art.jpg" %>
+	  <% end %>
+	  <%= "<img height=40 width=40 src=\"#{art_filename}\">" %>
+	</div>
 	<div class = "trackText">
 		<%= "#{song.title} - #{song.artist} - #{song.album} <br> #{song.submitter_name}" %>
 	</div>

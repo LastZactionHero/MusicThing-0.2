@@ -31,6 +31,22 @@ class Song < ActiveRecord::Base
 	# Exract Tag Data
 	song_tags = extract_mp3_tags( tempfile.path ) 
 	
+	# Get Amazon.com album art jpeg url for song
+	album_art_url = get_album_art_url( song_tags.artist + song_tags.album )
+	puts album_art_url
+	
+	# Download album art jpeg
+	jpeg_upload_filename = ""
+	tempfile_jpeg = Tempfile.new( 'jpeg_file' )
+	
+	if( fetch_album_jpeg( album_art_url, tempfile_jpeg ) == :success )
+	  # Upload album art to ftp server
+	  jpeg_upload_filename = "album_art/" + upload_filename + ".jpg"
+	  upload_to_ftp( tempfile_jpeg.path, jpeg_upload_filename )
+	  jpeg_upload_filename = "http://www.allweapons.net/musicthing/" + jpeg_upload_filename
+	  tempfile_jpeg.close
+	end
+	
 	# Add database entry
 	@song = Song.new()
 	@song.title = song_tags.title
@@ -39,6 +55,7 @@ class Song < ActiveRecord::Base
 	@song.filename = "http://www.allweapons.net/musicthing/#{upload_filename}"
 	@song.submitter_name = submitter_name
 	@song.playlist_idx = get_next_playlist_idx()
+	@song.art_filename = jpeg_upload_filename
 	@song.save
 	
 	# Clean up
@@ -50,6 +67,10 @@ class Song < ActiveRecord::Base
   # Extract MP3 Tag Information
   def self.extract_mp3_tags( input_filename )
   	mp3 = Mp3Info.open( input_filename )
+	
+	mp3.tag.album = "" if ( mp3.tag.album == "Unknown" || mp3.tag.album == "unknown" )
+	mp3.tag.artist = "" if ( mp3.tag.artist == "Unknown" || mp3.tag.artist == "unknown" )
+	mp3.tag.title = "" if ( mp3.tag.title == "Unknown" || mp3.tag.title == "unknown" )
   	return FileTags.new( mp3.tag.title, mp3.tag.artist, mp3.tag.album )  
   end
   
@@ -92,4 +113,79 @@ class Song < ActiveRecord::Base
     puts ftp.close
   end
   
+  
+  # Fetch jpeg at url
+  def self.fetch_album_jpeg( url, tempfile )
+    if( url.empty? )
+      return :fail
+    end
+
+    uri = URI.parse( url )
+    response = Net::HTTP.get_response( uri );
+
+    case response
+      when Net::HTTPSuccess
+		tempfile.puts response.body
+		puts "Response body size: #{response.body.size}\n"
+		puts "tempfile size: #{tempfile.size}\n"
+        return :success
+      else
+        return :fail
+    end
+  
+    return :fail
+  end
+
+
+  # Get Amazon.com album art url for search term
+  def self.get_album_art_url( search_terms )
+    puts "get_album_art_url()\n"
+	
+    # Bail out if no search terms were entered
+    if search_terms.empty?
+      return ""
+    end
+  
+    # Construct the search uri
+    search_url = "http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dpopular&field-keywords=" + search_terms.gsub( / /, '+' )
+    uri = URI.parse( search_url )
+
+    puts "search_url: #{search_url}\n"
+	
+    # Perform request
+    response = Net::HTTP.get_response( uri )
+
+    # Determine if response is valid
+    response_body = ""
+    case response
+      when Net::HTTPSuccess
+        response_body = response.body
+      else
+        return ""
+    end
+
+    # Bail out on empty response
+    if response_body.empty? 
+      return ""
+    end
+
+    # Search for album art url
+    response_body.split( /\n/ ).each do |line|
+      if( ( line.include? ".jpg" ) && ( line.include? "alt=\"Product Details\"" ) )
+
+        r1 = Regexp.new( 'img.*.jpg' )
+        img_src = line.scan( r1 )
+
+        if( img_src )
+          img_src_arr = img_src[0].split( /"/ )       
+          if( img_src_arr.size == 2 )
+		    return img_src_arr[1]
+          end
+        end
+      end
+    end
+
+    return ""
+  end
+
 end
