@@ -14924,3 +14924,439 @@ Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 13:04:32
 Rendering template within layouts/songs
 Rendering songs/player_generate
 Completed in 23ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/2]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 13:58:25) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 13:58:25) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 13:58:25) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 87ms (View: 10, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 13:58:26) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 109ms (View: 91, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 13:59:04) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 13:59:04) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 13:59:04) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 13:59:04) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 21ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 13:59:14) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 13:59:14) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 13:59:14) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 13:59:14) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 19ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 13:59:27) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 13:59:27) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 13:59:27) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 24ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 13:59:27) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.1ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 22ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:00:07) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:00:08) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:00:08) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (1.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 23ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:00:08) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:00:46) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:00:46) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:00:46) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (1.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 103ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:00:46) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (1.1ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 3, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:01:32) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:01:32) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:01:32) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 19ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:01:32) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 18ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:02:14) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:02:15) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:02:15) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:02:15) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.2ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 25ms (View: 3, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:02:47) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:02:47) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:02:47) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:02:47) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.2ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 26ms (View: 3, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:02:55) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 89ms (View: 87, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:02:56) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:02:56) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 18ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:02:56) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.6ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 21ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:03:10) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:03:10) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:03:10) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:03:10) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 24ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:03:25) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:03:25) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:03:25) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 20ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:03:25) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (1.2ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 18ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:03:49) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:03:49) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:03:49) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 130ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:03:49) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (1.8ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:04:47) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:04:48) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:04:48) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:04:48) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:05:17) [GET]
+  Parameters: {"player"=>"html5", "id"=>"2"}
+  [4;36;1mSong Load (1.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 16ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/2]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:05:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/2]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 14:06:13) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 14:06:13) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 14:06:13) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (1.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 19ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 14:06:13) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
