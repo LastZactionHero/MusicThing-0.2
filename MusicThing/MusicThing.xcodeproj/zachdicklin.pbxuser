@@ -220,6 +220,216 @@
 		vrLen = 1157;
 		vrLoc = 4911;
 	};
+	5CAB147611A0674E00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D05119F230E001A3FEF /* songs_controller.rb */;
+		name = "songs_controller.rb: 22";
+		rLen = 0;
+		rLoc = 421;
+		rType = 0;
+		vrLen = 825;
+		vrLoc = 2157;
+	};
+	5CAB147711A0674E00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D0A119F230E001A3FEF /* song.rb */;
+		name = "song.rb: 54";
+		rLen = 0;
+		rLoc = 1607;
+		rType = 0;
+		vrLen = 1512;
+		vrLoc = 716;
+	};
+	5CAB147811A0674E00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D98119F5738001A3FEF /* playlist.css */;
+		name = "playlist.css: 66";
+		rLen = 16;
+		rLoc = 950;
+		rType = 0;
+		vrLen = 675;
+		vrLoc = 433;
+	};
+	5CAB147911A0674E00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
+		name = "viewer.css: 89";
+		rLen = 1;
+		rLoc = 1434;
+		rType = 0;
+		vrLen = 745;
+		vrLoc = 797;
+	};
+	5CAB147A11A0674E00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 199";
+		rLen = 0;
+		rLoc = 5313;
+		rType = 0;
+		vrLen = 645;
+		vrLoc = 6903;
+	};
+	5CAB147B11A0674E00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 304";
+		rLen = 0;
+		rLoc = 7562;
+		rType = 0;
+		vrLen = 767;
+		vrLoc = 6979;
+	};
+	5CAB147C11A0675300A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 304";
+		rLen = 0;
+		rLoc = 7562;
+		rType = 0;
+		vrLen = 777;
+		vrLoc = 6979;
+	};
+	5CAB147D11A0677500A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 304";
+		rLen = 0;
+		rLoc = 7562;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 6979;
+	};
+	5CAB147E11A0678200A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 304";
+		rLen = 0;
+		rLoc = 7562;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 6979;
+	};
+	5CAB147F11A0678200A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D9A119F61CF001A3FEF /* player.css */;
+		name = "player.css: 20";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 323;
+		vrLoc = 0;
+	};
+	5CAB148011A0678200A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
+		name = "viewer.css: 92";
+		rLen = 0;
+		rLoc = 1473;
+		rType = 0;
+		vrLen = 762;
+		vrLoc = 780;
+	};
+	5CAB148111A0678B00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
+		name = "viewer.css: 92";
+		rLen = 0;
+		rLoc = 1476;
+		rType = 0;
+		vrLen = 762;
+		vrLoc = 780;
+	};
+	5CAB148211A0679A00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
+		name = "viewer.css: 92";
+		rLen = 0;
+		rLoc = 1476;
+		rType = 0;
+		vrLen = 762;
+		vrLoc = 780;
+	};
+	5CAB148311A0679A00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 304";
+		rLen = 0;
+		rLoc = 7562;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 6979;
+	};
+	5CAB148411A0679A00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 294";
+		rLen = 0;
+		rLoc = 7402;
+		rType = 0;
+		vrLen = 808;
+		vrLoc = 6947;
+	};
+	5CAB148511A067A700A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
+		name = "viewer.html.erb: 294";
+		rLen = 0;
+		rLoc = 7402;
+		rType = 0;
+		vrLen = 808;
+		vrLoc = 6947;
+	};
+	5CAB148611A067A700A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D98119F5738001A3FEF /* playlist.css */;
+		name = "playlist.css: 66";
+		rLen = 16;
+		rLoc = 950;
+		rType = 0;
+		vrLen = 693;
+		vrLoc = 414;
+	};
+	5CAB148711A067A700A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
+		name = "viewer.css: 92";
+		rLen = 0;
+		rLoc = 1476;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 780;
+	};
+	5CAB148811A067AC00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
+		name = "viewer.css: 92";
+		rLen = 0;
+		rLoc = 1476;
+		rType = 0;
+		vrLen = 761;
+		vrLoc = 780;
+	};
+	5CAB148911A067B400A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
+		name = "viewer.css: 91";
+		rLen = 0;
+		rLoc = 1458;
+		rType = 0;
+		vrLen = 760;
+		vrLoc = 780;
+	};
+	5CAB148A11A067BA00A4066D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D79119F2484001A3FEF /* viewer.css */;
+		name = "viewer.css: 91";
+		rLen = 0;
+		rLoc = 1458;
+		rType = 0;
+		vrLen = 760;
+		vrLoc = 780;
+	};
 	5CD2E9BB119FD23200150900 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 5CF67D78119F239E001A3FEF /* viewer.html.erb */;
@@ -336,6 +546,27 @@
 			5CAB147311A062BA00A4066D /* PBXTextBookmark */ = 5CAB147311A062BA00A4066D /* PBXTextBookmark */;
 			5CAB147411A062BA00A4066D /* PBXTextBookmark */ = 5CAB147411A062BA00A4066D /* PBXTextBookmark */;
 			5CAB147511A062BA00A4066D /* PBXTextBookmark */ = 5CAB147511A062BA00A4066D /* PBXTextBookmark */;
+			5CAB147611A0674E00A4066D /* PBXTextBookmark */ = 5CAB147611A0674E00A4066D /* PBXTextBookmark */;
+			5CAB147711A0674E00A4066D /* PBXTextBookmark */ = 5CAB147711A0674E00A4066D /* PBXTextBookmark */;
+			5CAB147811A0674E00A4066D /* PBXTextBookmark */ = 5CAB147811A0674E00A4066D /* PBXTextBookmark */;
+			5CAB147911A0674E00A4066D /* PBXTextBookmark */ = 5CAB147911A0674E00A4066D /* PBXTextBookmark */;
+			5CAB147A11A0674E00A4066D /* PBXTextBookmark */ = 5CAB147A11A0674E00A4066D /* PBXTextBookmark */;
+			5CAB147B11A0674E00A4066D /* PBXTextBookmark */ = 5CAB147B11A0674E00A4066D /* PBXTextBookmark */;
+			5CAB147C11A0675300A4066D /* PBXTextBookmark */ = 5CAB147C11A0675300A4066D /* PBXTextBookmark */;
+			5CAB147D11A0677500A4066D /* PBXTextBookmark */ = 5CAB147D11A0677500A4066D /* PBXTextBookmark */;
+			5CAB147E11A0678200A4066D /* PBXTextBookmark */ = 5CAB147E11A0678200A4066D /* PBXTextBookmark */;
+			5CAB147F11A0678200A4066D /* PBXTextBookmark */ = 5CAB147F11A0678200A4066D /* PBXTextBookmark */;
+			5CAB148011A0678200A4066D /* PBXTextBookmark */ = 5CAB148011A0678200A4066D /* PBXTextBookmark */;
+			5CAB148111A0678B00A4066D /* PBXTextBookmark */ = 5CAB148111A0678B00A4066D /* PBXTextBookmark */;
+			5CAB148211A0679A00A4066D /* PBXTextBookmark */ = 5CAB148211A0679A00A4066D /* PBXTextBookmark */;
+			5CAB148311A0679A00A4066D /* PBXTextBookmark */ = 5CAB148311A0679A00A4066D /* PBXTextBookmark */;
+			5CAB148411A0679A00A4066D /* PBXTextBookmark */ = 5CAB148411A0679A00A4066D /* PBXTextBookmark */;
+			5CAB148511A067A700A4066D /* PBXTextBookmark */ = 5CAB148511A067A700A4066D /* PBXTextBookmark */;
+			5CAB148611A067A700A4066D /* PBXTextBookmark */ = 5CAB148611A067A700A4066D /* PBXTextBookmark */;
+			5CAB148711A067A700A4066D /* PBXTextBookmark */ = 5CAB148711A067A700A4066D /* PBXTextBookmark */;
+			5CAB148811A067AC00A4066D /* PBXTextBookmark */ = 5CAB148811A067AC00A4066D /* PBXTextBookmark */;
+			5CAB148911A067B400A4066D /* PBXTextBookmark */ = 5CAB148911A067B400A4066D /* PBXTextBookmark */;
+			5CAB148A11A067BA00A4066D /* PBXTextBookmark */ = 5CAB148A11A067BA00A4066D /* PBXTextBookmark */;
 			5CD2E9BB119FD23200150900 = 5CD2E9BB119FD23200150900 /* PBXTextBookmark */;
 			5CD2E9BC119FD23200150900 = 5CD2E9BC119FD23200150900 /* PBXTextBookmark */;
 			5CD2E9BD119FD23200150900 = 5CD2E9BD119FD23200150900 /* PBXTextBookmark */;
@@ -380,16 +611,16 @@
 	};
 	5CF67D05119F230E001A3FEF /* songs_controller.rb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 1898}}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 1859}}";
 			sepNavSelRange = "{421, 0}";
-			sepNavVisRange = "{114, 794}";
+			sepNavVisRange = "{2157, 825}";
 		};
 	};
 	5CF67D0A119F230E001A3FEF /* song.rb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 2431}}";
-			sepNavSelRange = "{667, 0}";
-			sepNavVisRange = "{272, 1462}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 2353}}";
+			sepNavSelRange = "{1607, 0}";
+			sepNavVisRange = "{716, 1512}";
 		};
 	};
 	5CF67D0D119F230E001A3FEF /* songs.html.erb */ = {
@@ -444,17 +675,17 @@
 	};
 	5CF67D78119F239E001A3FEF /* viewer.html.erb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 3952}}";
-			sepNavSelRange = "{5313, 0}";
-			sepNavVisRange = "{4911, 1157}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 4212}}";
+			sepNavSelRange = "{7402, 0}";
+			sepNavVisRange = "{6947, 808}";
 			sepNavWindowFrame = "{{15, 323}, {725, 450}}";
 		};
 	};
 	5CF67D79119F2484001A3FEF /* viewer.css */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 1183}}";
-			sepNavSelRange = "{32, 0}";
-			sepNavVisRange = "{0, 670}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 1248}}";
+			sepNavSelRange = "{1458, 0}";
+			sepNavVisRange = "{780, 760}";
 		};
 	};
 	5CF67D7E119F313A001A3FEF /* view_playlist.erb */ = {
@@ -503,7 +734,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {920, 962}}";
 			sepNavSelRange = "{950, 16}";
-			sepNavVisRange = "{396, 712}";
+			sepNavVisRange = "{414, 693}";
 		};
 	};
 	5CF67D99119F6093001A3FEF /* player_generate.html.erb */ = {
@@ -515,7 +746,7 @@
 	};
 	5CF67D9A119F61CF001A3FEF /* player.css */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 575}}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 550}}";
 			sepNavSelRange = "{255, 0}";
 			sepNavVisRange = "{0, 323}";
 		};
