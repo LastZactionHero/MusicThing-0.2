@@ -49,11 +49,11 @@ class Song < ActiveRecord::Base
 	
 	# Add database entry
 	@song = Song.new()
-	@song.title = song_tags.title
-	@song.artist = song_tags.artist
-	@song.album = song_tags.album
+	@song.title = song_tags.title.empty? ? "Unknown" : song_tags.title
+	@song.artist = song_tags.artist.empty? ? "Unknown Artist" : song_tags.artist
+	@song.album = song_tags.album.empty? ? "Unknown Album" : song_tags.album
 	@song.filename = "http://www.allweapons.net/musicthing/#{upload_filename}"
-	@song.submitter_name = submitter_name
+	@song.submitter_name = submitter_name.empty? ? "Anonymous" : submitter_name
 	@song.playlist_idx = get_next_playlist_idx()
 	@song.art_filename = jpeg_upload_filename
 	@song.save

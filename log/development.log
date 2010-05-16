@@ -14216,3 +14216,191 @@ Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 12:28:45
 Rendering template within layouts/songs
 Rendering songs/player_generate
 Completed in 16ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/1]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 12:33:09) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 12:33:09) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 12:33:09) [GET]
+  Parameters: {"id"=>"0"}
+
+SyntaxError (/Users/zachdicklin/www/musicthing0.2/app/models/song.rb:52: syntax error, unexpected ':', expecting kEND
+	@song.title = song_tags.title.empty? "Unknown" : song_tags.title
+	                                                ^
+/Users/zachdicklin/www/musicthing0.2/app/models/song.rb:53: syntax error, unexpected ':', expecting kEND
+...tist.empty? "Unknown Artist" : song_tags.artist
+                              ^
+/Users/zachdicklin/www/musicthing0.2/app/models/song.rb:56: syntax error, unexpected ':', expecting kEND
+...tter_name.empty? "Anonymous" : submitter_name
+                              ^):
+  app/controllers/songs_controller.rb:120:in `playlist_generate'
+
+Rendered rescues/_trace (61.5ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 12:33:14) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 12:33:14) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 12:33:14) [GET]
+  Parameters: {"id"=>"0"}
+
+SyntaxError (/Users/zachdicklin/www/musicthing0.2/app/models/song.rb:52: syntax error, unexpected ':', expecting kEND
+	@song.title = song_tags.title.empty? "Unknown" : song_tags.title
+	                                                ^
+/Users/zachdicklin/www/musicthing0.2/app/models/song.rb:53: syntax error, unexpected ':', expecting kEND
+...tist.empty? "Unknown Artist" : song_tags.artist
+                              ^
+/Users/zachdicklin/www/musicthing0.2/app/models/song.rb:56: syntax error, unexpected ':', expecting kEND
+...tter_name.empty? "Anonymous" : submitter_name
+                              ^):
+  app/controllers/songs_controller.rb:120:in `playlist_generate'
+
+Rendered rescues/_trace (146.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 12:41:12) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 12:41:12) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 12:41:13) [GET]
+  Parameters: {"id"=>"0"}
+
+SyntaxError (/Users/zachdicklin/www/musicthing0.2/app/models/song.rb:54: syntax error, unexpected tCONSTANT, expecting kEND
+...ng_tags.album.empty? ?"Unknown Album" : song_tags.album
+                              ^
+/Users/zachdicklin/www/musicthing0.2/app/models/song.rb:55: syntax error, unexpected tIDENTIFIER, expecting kEND
+	@song.filename = "http://www.allweapons.net/musicthi...
+	                      ^
+/Users/zachdicklin/www/musicthing0.2/app/models/song.rb:55: unknown regexp options - www):
+  app/controllers/songs_controller.rb:120:in `playlist_generate'
+
+Rendered rescues/_trace (62.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 12:41:57) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 12:41:58) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 12:41:58) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 632ms (View: 110, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 12:41:58) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 35ms (View: 16, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 12:42:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/1]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 12:42:00) [GET]
+  Parameters: {"player"=>"html5", "id"=>"1"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 22ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/1]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-16 12:42:29) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100516-1864-1nhe2pf-0>}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (1.6ms)[0m   [0;1mINSERT INTO "songs" ("artist", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', '', '2010-05-16 17:42:56', 'Track 8', 'Anonymous', '2010-05-16 17:42:56', 'Unknown Album', 'http://www.allweapons.net/musicthing/208---Track-8.mp3', 2)[0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 27459ms (DB: 2) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-16 12:42:56) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 117ms (View: 115, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 12:42:56) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 12:42:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSong Load (1.2ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 194ms (View: 3, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/1]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 12:42:57) [GET]
+  Parameters: {"player"=>"html5", "id"=>"1"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 24ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/1]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 12:43:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSong Load (1.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/2]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 12:43:00) [GET]
+  Parameters: {"player"=>"html5", "id"=>"2"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/2]
