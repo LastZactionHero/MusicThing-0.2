@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|\
   map.song_uploader_process 'songs/uploader_process/', :controller => 'songs', :action => 'uploader_process'
   map.song_uploader_complete 'songs/uploader_complete/', :controller => 'songs', :action => 'uploader_complete'
   map.song_playlist_generate 'songs/playlist_generate/:id', :controller => 'songs', :action => 'playlist_generate', :id => ":id"
-  map.song_player_generate 'songs/player_generate/:id', :controller => 'songs', :action => 'player_generate', :id => ":id"
+  map.song_player_generate 'songs/player_generate/:player/:id', :controller => 'songs', :action => 'player_generate', :player=> ":player", :id => ":id"
   
   map.resources :songs
   

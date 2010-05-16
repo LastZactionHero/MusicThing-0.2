@@ -125,6 +125,8 @@ class SongsController < ApplicationController
   # Player generation
   def player_generate
     current_track_idx = params[:id]
+	@player = params[:player].to_s
+	puts "Player: #{@player}\n";
 	
 	@filename = ""
 	

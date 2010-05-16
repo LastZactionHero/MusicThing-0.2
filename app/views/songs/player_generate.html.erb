@@ -1,3 +1,21 @@
-<div style="top:0px;">
-<%= "<audio style=\"top:0px;\" src=\"#{@filename}\" autoplay=\"true\" onended=\"javascript:next_track()\" controls=\"controls\">Your browser does not support the audio element.</audio>" %>
-</div>
+<% if !@filename.empty? %>
+
+	<% if( @player == "html5" ) %>
+
+		<div style="top:0px;">
+			<%= "<audio style=\"top:0px;\" src=\"#{@filename}\" autoplay=\"true\" onended=\"javascript:next_track()\" controls=\"controls\">Your browser does not support the audio element.</audio>" %>
+		</div>
+
+	<% elsif( @player == "quicktime" ) %>
+		<script type="text/javascript"> alert("Hello!"); </script>
+		<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+			<%= "<embed id=\"quicktime_audio_player\" postdomevents=\"true\" src=\"#{@filename}\" width=\"250\" height=\"15\" autoplay=\"true\" style=\"behavior:url(#qt_event_source);\" controller=\"true\" pluginspage=\"http://www.apple.com/quicktime/download/\"></embed>" %>
+		</object> 
+
+	<% else %>
+
+		No supported player found.
+
+	<% end %>
+	
+<% end %>

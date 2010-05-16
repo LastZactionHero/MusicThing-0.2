@@ -13,6 +13,7 @@
 	gRequestRefreshPlayist = null;
 	gRequestRefreshPlayer = null;
 	gCurrentTrackIdx = 0;
+	gBrowser = "Other"
 	
 			
 	//----------------------------------------------
@@ -20,11 +21,75 @@
 	//----------------------------------------------
 	function startup()
 	{
+		browser_detect();
 		update_uploader_button();
 		refresh_playlist();
 		refresh_player();
 	} // startup()
+
 	
+	//----------------------------------------------
+	// Register for Quicktime Player callbacks
+	//----------------------------------------------
+	function register_quicktime_player()
+	{
+		if( document.getElementById( "quicktime_audio_player" ) )
+		{ 
+			document.getElementById( "quicktime_audio_player" ).addEventListener( 'qt_ended', quicktime_player_ended_callback, false ); 
+		}
+		else
+		{
+			setTimeout( "register_quicktime_player()", 500 );
+		}
+	} // register_quicktime_player()
+	
+	
+	//----------------------------------------------
+	// Quicktime Player Track Ended Callback
+	//----------------------------------------------
+	function quicktime_player_ended_callback()
+	{
+		document.getElementById( 'divPlayer' ).innerHTML = "";
+		next_track();
+	} // quicktime_player_ended_callback()
+	
+	
+	//----------------------------------------------
+	// Detect Current Browser
+	//----------------------------------------------
+	function browser_detect()
+	{
+		if( navigator.userAgent.indexOf( "Firefox" ) != -1 )
+		{
+			gBrowser = "Firefox";
+		}
+		else if( navigator.userAgent.indexOf( "Chrome" ) != -1 )
+		{
+			gBrowser = "Chrome";
+		}
+		else if( navigator.userAgent.indexOf( "Internet Explorer" ) != -1 )
+		{
+			gBrowser = "Internet Explorer";
+		}
+		else if( navigator.userAgent.indexOf( "Safari" ) != -1 )
+		{
+			gBrowser = "Safari";
+		}
+		else
+		{
+			gBrowser = "Other";
+		}
+	} // browser_detect()
+	
+	//----------------------------------------------
+	// Does this current browser support HTML5
+	// MP3 Audio?
+	//----------------------------------------------
+	function use_html5_audio()
+	{
+		if( gBrowser == "Chrome" || gBrowser == "Safari" ) return true;
+		return false;
+	}
 	
 	//----------------------------------------------
 	// Toggle visibility state of upload track box
@@ -146,7 +211,17 @@
 		
 		if( gRequestRefreshPlayer != null )
 		{
-			requestUrl = "/songs/player_generate/" + gCurrentTrackIdx;
+			requestUrl = "/songs/player_generate/";
+			if( use_html5_audio() )
+			{
+				requestUrl = requestUrl + "html5/";
+			}
+			else
+			{
+				requestUrl = requestUrl += "quicktime/";
+			}
+
+			requestUrl = requestUrl + gCurrentTrackIdx;
 			gRequestRefreshPlayer.onreadystatechange = refresh_player_callback;
 			gRequestRefreshPlayer.open( "GET", requestUrl, true );
 			gRequestRefreshPlayer.send();
@@ -167,6 +242,8 @@
 		{
 			document.getElementById( 'divPlayer' ).innerHTML = gRequestRefreshPlayer.responseText;
 			gRequestRefreshPlayer = null;
+			
+			if( use_html5_audio() == false ) register_quicktime_player();
 		}
 	} // refresh_player_callback()
 	
