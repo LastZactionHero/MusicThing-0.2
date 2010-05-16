@@ -118,6 +118,8 @@ class SongsController < ApplicationController
   def playlist_generate
 	@current_track_idx = params[:id]
 	@song_list = Song.all
+	@song_list = @song_list.sort_by{ |song| song.playlist_idx }
+	
 	
 	puts "Current Track Idx: #{@current_track_idx}\n"
   end

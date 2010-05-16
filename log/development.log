@@ -11988,3 +11988,361 @@ Processing SongsController#index (for 127.0.0.1 at 2010-05-16 01:10:06) [GET]
 Rendering template within layouts/songs
 Rendering songs/index
 Completed in 27ms (View: 16, DB: 1) | 200 OK [http://localhost/songs]
+
+
+Processing ApplicationController#viewer (for 127.0.0.1 at 2010-05-16 01:59:54) [GET]
+
+SyntaxError (/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:120: syntax error, unexpected '}', expecting tCOLON2 or '[' or '.'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:124: syntax error, unexpected kEND, expecting '}'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:141: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#viewer (for 127.0.0.1 at 2010-05-16 02:00:07) [GET]
+
+SyntaxError (/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:120: syntax error, unexpected '}', expecting tCOLON2 or '[' or '.'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:124: syntax error, unexpected kEND, expecting '}'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:141: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (50.9ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#viewer (for 127.0.0.1 at 2010-05-16 02:00:08) [GET]
+
+SyntaxError (/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:120: syntax error, unexpected '}', expecting tCOLON2 or '[' or '.'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:124: syntax error, unexpected kEND, expecting '}'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:141: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#viewer (for 127.0.0.1 at 2010-05-16 02:00:10) [GET]
+
+SyntaxError (/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:120: syntax error, unexpected '}', expecting tCOLON2 or '[' or '.'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:124: syntax error, unexpected kEND, expecting '}'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:141: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#viewer (for 127.0.0.1 at 2010-05-16 02:00:47) [GET]
+
+SyntaxError (/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:121: syntax error, unexpected '}', expecting tCOLON2 or '[' or '.'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:125: syntax error, unexpected kEND, expecting '}'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:142: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (49.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#viewer (for 127.0.0.1 at 2010-05-16 02:01:12) [GET]
+
+SyntaxError (/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:121: syntax error, unexpected '}', expecting tCOLON2 or '[' or '.'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:125: syntax error, unexpected kEND, expecting '}'
+/Users/zachdicklin/www/musicthing0.2/app/controllers/songs_controller.rb:142: syntax error, unexpected kEND, expecting '}'):
+  
+
+Rendered rescues/_trace (58.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 02:02:18) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 53ms (View: 50, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 02:02:18) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 02:02:18) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 1747ms (View: 79, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 02:02:20) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (0.9ms)[0m   [0mSELECT * FROM "songs" [0m
+
+NoMethodError (undefined method `>' for true:TrueClass):
+  app/controllers/songs_controller.rb:121:in `sort'
+  app/controllers/songs_controller.rb:121:in `playlist_generate'
+
+Rendered rescues/_trace (53.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 02:02:38) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 02:02:38) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 02:02:38) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+
+NoMethodError (undefined method `>' for true:TrueClass):
+  app/controllers/songs_controller.rb:121:in `sort'
+  app/controllers/songs_controller.rb:121:in `playlist_generate'
+
+Rendered rescues/_trace (52.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 02:02:38) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (0.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 18ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 02:03:31) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 02:03:31) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 107ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 02:03:32) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 19ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 02:03:32) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (0.9ms)[0m   [0mSELECT * FROM "songs" [0m
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/songs_controller.rb:121:in `playlist_idx'
+  app/controllers/songs_controller.rb:121:in `playlist_generate'
+  app/controllers/songs_controller.rb:121:in `sort'
+  app/controllers/songs_controller.rb:121:in `playlist_generate'
+
+Rendered rescues/_trace (53.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 02:03:39) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 02:03:39) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 02:03:39) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 28ms (View: 14, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 02:03:39) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 22ms (View: 3, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 02:05:46) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 02:05:46) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 02:05:46) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+
+NoMethodError (undefined method `sortby' for #<Array:0x2b76c98>):
+  app/controllers/songs_controller.rb:121:in `playlist_generate'
+
+Rendered rescues/_trace (143.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 02:05:46) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (0.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-05-16 02:05:52) [GET]
+  [4;36;1mSong Load (0.8ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/index
+Completed in 444ms (View: 432, DB: 1) | 200 OK [http://localhost/songs]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 02:06:52) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 144ms (View: 141, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 02:06:52) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 02:06:52) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 130ms (View: 9, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 02:06:52) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (0.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 26ms (View: 9, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-05-16 02:07:06) [GET]
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/index
+Completed in 49ms (View: 36, DB: 1) | 200 OK [http://localhost/songs]
+
+
+Processing SongsController#edit (for 127.0.0.1 at 2010-05-16 02:07:08) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM "songs" WHERE ("songs"."id" = 10) [0m
+Rendering template within layouts/songs
+Rendering songs/edit
+Completed in 34ms (View: 19, DB: 0) | 200 OK [http://localhost/songs/10/edit]
+
+
+Processing SongsController#update (for 127.0.0.1 at 2010-05-16 02:07:12) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"CK+vOrXEfhFmGRYHw1sh40f88PpaOOqPYEQpHHN18g4=", "id"=>"10", "song"=>{"artist"=>"Japanese Voyeurs", "art_filename"=>"", "title"=>"That Love Sound", "submitter_name"=>"Zach", "album"=>"That Love Sound", "filename"=>"http://www.allweapons.net/musicthing/101-japanese_voyeurs-that_love_sound.mp3", "playlist_idx"=>"0"}}
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM "songs" WHERE ("songs"."id" = 10) [0m
+  [4;35;1mSong Update (0.7ms)[0m   [0mUPDATE "songs" SET "updated_at" = '2010-05-16 07:07:12', "art_filename" = '', "playlist_idx" = 0 WHERE "id" = 10[0m
+Redirected to http://localhost:3000/songs/10
+Completed in 31ms (DB: 1) | 302 Found [http://localhost/songs/10]
+
+
+Processing SongsController#show (for 127.0.0.1 at 2010-05-16 02:07:12) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM "songs" WHERE ("songs"."id" = 10) [0m
+Rendering template within layouts/songs
+Rendering songs/show
+Completed in 114ms (View: 10, DB: 0) | 200 OK [http://localhost/songs/10]
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-05-16 02:07:13) [GET]
+  [4;35;1mSong Load (0.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/index
+Completed in 26ms (View: 14, DB: 1) | 200 OK [http://localhost/songs]
+
+
+Processing SongsController#edit (for 127.0.0.1 at 2010-05-16 02:07:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM "songs" WHERE ("songs"."id" = 3) [0m
+Rendering template within layouts/songs
+Rendering songs/edit
+Completed in 25ms (View: 12, DB: 0) | 200 OK [http://localhost/songs/3/edit]
+
+
+Processing SongsController#update (for 127.0.0.1 at 2010-05-16 02:07:17) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"CK+vOrXEfhFmGRYHw1sh40f88PpaOOqPYEQpHHN18g4=", "id"=>"3", "song"=>{"artist"=>"Bun B  ", "art_filename"=>"", "title"=>"What I Represent", "submitter_name"=>"Zach", "album"=>"", "filename"=>"http://www.allweapons.net/musicthing/0Bun-B---Trill---09---What-I-Represent-(UGK).mp3", "playlist_idx"=>"1"}}
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM "songs" WHERE ("songs"."id" = 3) [0m
+  [4;36;1mSong Update (0.5ms)[0m   [0;1mUPDATE "songs" SET "updated_at" = '2010-05-16 07:07:17', "playlist_idx" = 1 WHERE "id" = 3[0m
+Redirected to http://localhost:3000/songs/3
+Completed in 41ms (DB: 1) | 302 Found [http://localhost/songs/3]
+
+
+Processing SongsController#show (for 127.0.0.1 at 2010-05-16 02:07:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSong Load (0.5ms)[0m   [0mSELECT * FROM "songs" WHERE ("songs"."id" = 3) [0m
+Rendering template within layouts/songs
+Rendering songs/show
+Completed in 20ms (View: 5, DB: 1) | 200 OK [http://localhost/songs/3]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-16 02:07:21) [GET]
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-16 02:07:21) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-16 02:07:21) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (0.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 02:07:21) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (0.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 22ms (View: 2, DB: 1) | 200 OK [http://localhost/songs/player_generate/html5/0]
