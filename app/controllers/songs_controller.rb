@@ -91,6 +91,9 @@ class SongsController < ApplicationController
     if params[:address]
       session[:playlist_address] = params[:address]
 	end
+	
+	valid_playlists = Playlist.all.select{ |playlist| playlist.address == session[:playlist_address] }
+	@playlist_title = ( valid_playlists.size() > 0 ) ? valid_playlists[0].title : "Untitled Playlist"
   end
   
   # Song uploader /songs/uploader
