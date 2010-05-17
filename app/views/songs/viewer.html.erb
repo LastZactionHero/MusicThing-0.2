@@ -23,7 +23,7 @@
 	{
 		browser_detect();
 		update_uploader_button();
-		refresh_playlist();
+		periodic_refresh();
 		refresh_player();
 	} // startup()
 
@@ -274,6 +274,15 @@
 		set_track_idx( gCurrentTrackIdx + 1 );
 	} // next_track()
 	
+	
+	//-------------------------------------------
+	// Periodically call playlist refresh 
+	//-------------------------------------------	
+	function periodic_refresh()
+	{
+		refresh_playlist();
+		setTimeout( "periodic_refresh()", 30000 );
+	} // periodic_refresh()
 	
 </script>
 
