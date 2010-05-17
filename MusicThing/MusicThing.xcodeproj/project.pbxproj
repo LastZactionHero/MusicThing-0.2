@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		5CBA96E411A0A26E005456E1 /* playlist_home.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = playlist_home.css; sourceTree = "<group>"; };
+		5CBA96E511A0A8AF005456E1 /* playlists_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = playlists_controller.rb; sourceTree = "<group>"; };
+		5CBA96E811A0A997005456E1 /* edit.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = edit.html.erb; sourceTree = "<group>"; };
+		5CBA96E911A0A997005456E1 /* index.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.html.erb; sourceTree = "<group>"; };
+		5CBA96EA11A0A997005456E1 /* new.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = new.html.erb; sourceTree = "<group>"; };
+		5CBA96EB11A0A997005456E1 /* show.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = show.html.erb; sourceTree = "<group>"; };
+		5CBA96EC11A0A9BD005456E1 /* home.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = home.html.erb; sourceTree = "<group>"; };
+		5CBA96ED11A0AA9D005456E1 /* playlists.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = playlists.html.erb; sourceTree = "<group>"; };
 		5CF67D04119F230E001A3FEF /* application_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = application_controller.rb; sourceTree = "<group>"; };
 		5CF67D05119F230E001A3FEF /* songs_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = songs_controller.rb; sourceTree = "<group>"; };
 		5CF67D07119F230E001A3FEF /* application_helper.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = application_helper.rb; sourceTree = "<group>"; };
@@ -91,6 +99,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		5CBA96E711A0A997005456E1 /* playlists */ = {
+			isa = PBXGroup;
+			children = (
+				5CBA96E811A0A997005456E1 /* edit.html.erb */,
+				5CBA96E911A0A997005456E1 /* index.html.erb */,
+				5CBA96EA11A0A997005456E1 /* new.html.erb */,
+				5CBA96EB11A0A997005456E1 /* show.html.erb */,
+				5CBA96EC11A0A9BD005456E1 /* home.html.erb */,
+			);
+			path = playlists;
+			sourceTree = "<group>";
+		};
 		5CF67CF8119F22FB001A3FEF = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +154,7 @@
 		5CF67D03119F230E001A3FEF /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5CBA96E511A0A8AF005456E1 /* playlists_controller.rb */,
 				5CF67D04119F230E001A3FEF /* application_controller.rb */,
 				5CF67D05119F230E001A3FEF /* songs_controller.rb */,
 			);
@@ -160,6 +181,7 @@
 		5CF67D0B119F230E001A3FEF /* views */ = {
 			isa = PBXGroup;
 			children = (
+				5CBA96E711A0A997005456E1 /* playlists */,
 				5CF67D0C119F230E001A3FEF /* layouts */,
 				5CF67D0E119F230E001A3FEF /* songs */,
 			);
@@ -169,6 +191,7 @@
 		5CF67D0C119F230E001A3FEF /* layouts */ = {
 			isa = PBXGroup;
 			children = (
+				5CBA96ED11A0AA9D005456E1 /* playlists.html.erb */,
 				5CF67D0D119F230E001A3FEF /* songs.html.erb */,
 			);
 			path = layouts;
@@ -386,6 +409,7 @@
 				5CF67D95119F388F001A3FEF /* uploader.css */,
 				5CF67D98119F5738001A3FEF /* playlist.css */,
 				5CF67D9A119F61CF001A3FEF /* player.css */,
+				5CBA96E411A0A26E005456E1 /* playlist_home.css */,
 			);
 			path = stylesheets;
 			sourceTree = "<group>";

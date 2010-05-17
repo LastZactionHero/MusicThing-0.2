@@ -88,7 +88,9 @@ class SongsController < ApplicationController
   
   # Playlist Viewer /songs/viewer
   def viewer
-  
+    if params[:address]
+      session[:playlist_address] = params[:address]
+	end
   end
   
   # Song uploader /songs/uploader
@@ -103,7 +105,7 @@ class SongsController < ApplicationController
 	data_file = params[:data_file]
 	
 	# Upload
-	Song.upload_file( submitter_name, data_file )
+	Song.upload_file( submitter_name, data_file, session[:playlist_address] )
 	
 	# Redirect
 	redirect_to :action => "uploader_complete"
@@ -117,7 +119,7 @@ class SongsController < ApplicationController
   # Playlist generation
   def playlist_generate
 	@current_track_idx = params[:id]
-	@song_list = Song.all
+	@song_list = Song.all.select{ |song| song.address == session[:playlist_address] }
 	@song_list = @song_list.sort_by{ |song| song.playlist_idx }
 	
 	
@@ -132,11 +134,12 @@ class SongsController < ApplicationController
 	
 	@filename = ""
 	
-	Song.all.each do |song|
+	@song_list = Song.all.select{ |song| song.address == session[:playlist_address] }
+	@song_list.each do |song|
 	  @filename = song.filename if song.playlist_idx == current_track_idx.to_i
 	end
 	
 	puts "Filename: #{@filename}\n"
   end
-  
+
 end

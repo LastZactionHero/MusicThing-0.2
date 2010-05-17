@@ -16,7 +16,7 @@ class Song < ActiveRecord::Base
 	
   # Upload an MP3 File to the server and store
   # information to database
-  def self.upload_file( submitter_name, data_file )
+  def self.upload_file( submitter_name, data_file, playlist_address )
 	  
 	# Convert filename for storage on server
 	upload_filename = generate_storage_filename( data_file.original_filename )
@@ -26,7 +26,7 @@ class Song < ActiveRecord::Base
 	tempfile.puts data_file.read
 	
 	# Upload to ftp server
-	upload_to_ftp( tempfile.path , upload_filename )
+	#upload_to_ftp( tempfile.path , upload_filename )
 	
 	# Exract Tag Data
 	song_tags = extract_mp3_tags( tempfile.path ) 
@@ -54,8 +54,9 @@ class Song < ActiveRecord::Base
 	@song.album = song_tags.album.empty? ? "Unknown Album" : song_tags.album
 	@song.filename = "http://www.allweapons.net/musicthing/#{upload_filename}"
 	@song.submitter_name = submitter_name.empty? ? "Anonymous" : submitter_name
-	@song.playlist_idx = get_next_playlist_idx()
+	@song.playlist_idx = get_next_playlist_idx( playlist_address )
 	@song.art_filename = jpeg_upload_filename
+	@song.address = playlist_address
 	@song.save
 	
 	# Clean up
@@ -88,11 +89,11 @@ class Song < ActiveRecord::Base
   
   
   # Get the index of the next playlist entry
-  def self.get_next_playlist_idx()
+  def self.get_next_playlist_idx( playlist_address )
     max = -1
 	
 	Song.all.each do |song|
-	  max = song.playlist_idx if song.playlist_idx > max
+	  max = song.playlist_idx if ( song.playlist_idx > max ) && ( song.address == playlist_address )
 	end
 	
 	return ( max + 1 )

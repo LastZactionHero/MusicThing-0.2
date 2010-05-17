@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag "playlist_home" %>
+
+<div class="indexBackground"></div>
+
+<div class="logoBox"></div>
+
+<div class="screenshotBox"></div>
+
+<div class="startBox">
+Start a New Playlist<br>
+
+<% form_for :playlist, :url => { :action => "start" } do |f| %>
+  <p class="h1">
+  Title: 
+  <%= f.text_field :title, :size=>20 %>
+  <%= f.submit 'Start!' %>
+  </p>
+<% end %>
+
+</div>

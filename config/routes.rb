@@ -1,13 +1,18 @@
-ActionController::Routing::Routes.draw do |map|\
-  map.root :controller => 'songs', :action => 'viewer'
+ActionController::Routing::Routes.draw do |map|
+
+  map.root :controller => 'playlists', :action=>'home'
+  
   map.song_viewer 'songs/viewer/', :controller => 'songs', :action => 'viewer'
   map.song_uploader 'songs/uploader/', :controller => 'songs', :action => 'uploader'
   map.song_uploader_process 'songs/uploader_process/', :controller => 'songs', :action => 'uploader_process'
   map.song_uploader_complete 'songs/uploader_complete/', :controller => 'songs', :action => 'uploader_complete'
   map.song_playlist_generate 'songs/playlist_generate/:id', :controller => 'songs', :action => 'playlist_generate', :id => ":id"
   map.song_player_generate 'songs/player_generate/:player/:id', :controller => 'songs', :action => 'player_generate', :player=> ":player", :id => ":id"
-  
+
   map.resources :songs
+  map.resources :playlists
+  
+  map.song_direct '/:address', :controller => 'songs', :action => 'viewer', :address => ":address"
   
   # The priority is based upon order of creation: first created -> highest priority.
 
