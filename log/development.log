@@ -21317,3 +21317,18 @@ Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-16 21:43:31
 Rendering template within layouts/songs
 Rendering songs/player_generate
 Completed in 24ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-05-16 21:46:15) [GET]
+  [4;36;1mSong Load (1.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/index
+Completed in 181ms (View: 91, DB: 2) | 200 OK [http://localhost/songs]
+
+
+Processing SongsController#edit (for 127.0.0.1 at 2010-05-16 21:46:18) [GET]
+  Parameters: {"id"=>"44"}
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM "songs" WHERE ("songs"."id" = 44) [0m
+Rendering template within layouts/songs
+Rendering songs/edit
+Completed in 35ms (View: 20, DB: 0) | 200 OK [http://localhost/songs/44/edit]
