@@ -65,7 +65,7 @@
 		fRef = 5CF67D0A119F230E001A3FEF /* song.rb */;
 		name = "song.rb: 54";
 		rLen = 0;
-		rLoc = 1626;
+		rLoc = 1625;
 		rType = 0;
 		vrLen = 1512;
 		vrLoc = 716;
@@ -338,7 +338,7 @@
 		fRef = 5CF67D0A119F230E001A3FEF /* song.rb */;
 		name = "song.rb: 57";
 		rLen = 21;
-		rLoc = 1835;
+		rLoc = 1834;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 2126;
@@ -543,6 +543,26 @@
 		vrLen = 898;
 		vrLoc = 1813;
 	};
+	5CBA970D11A0E8BF005456E1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CBA96E511A0A8AF005456E1 /* playlists_controller.rb */;
+		name = "playlists_controller.rb: 110";
+		rLen = 0;
+		rLoc = 2651;
+		rType = 0;
+		vrLen = 898;
+		vrLoc = 1813;
+	};
+	5CBA970E11A0E8BF005456E1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5CF67D0A119F230E001A3FEF /* song.rb */;
+		name = "song.rb: 29";
+		rLen = 0;
+		rLoc = 685;
+		rType = 0;
+		vrLen = 1151;
+		vrLoc = 0;
+	};
 	5CF67CFA119F22FC001A3FEF /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		addToTargets = (
@@ -625,6 +645,8 @@
 			5CBA970A11A0E854005456E1 /* PBXTextBookmark */ = 5CBA970A11A0E854005456E1 /* PBXTextBookmark */;
 			5CBA970B11A0E854005456E1 /* PBXTextBookmark */ = 5CBA970B11A0E854005456E1 /* PBXTextBookmark */;
 			5CBA970C11A0E854005456E1 /* PBXTextBookmark */ = 5CBA970C11A0E854005456E1 /* PBXTextBookmark */;
+			5CBA970D11A0E8BF005456E1 /* PBXTextBookmark */ = 5CBA970D11A0E8BF005456E1 /* PBXTextBookmark */;
+			5CBA970E11A0E8BF005456E1 /* PBXTextBookmark */ = 5CBA970E11A0E8BF005456E1 /* PBXTextBookmark */;
 			5CF67D9B119F6B76001A3FEF = 5CF67D9B119F6B76001A3FEF /* PBXTextBookmark */;
 			5CF67D9C119F6B76001A3FEF = 5CF67D9C119F6B76001A3FEF /* PBXTextBookmark */;
 			5CF67D9E119F6B76001A3FEF = 5CF67D9E119F6B76001A3FEF /* PBXTextBookmark */;
@@ -668,9 +690,9 @@
 	};
 	5CF67D0A119F230E001A3FEF /* song.rb */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {920, 2353}}";
-			sepNavSelRange = "{1835, 21}";
-			sepNavVisRange = "{2126, 1286}";
+			sepNavIntBoundsRect = "{{0, 0}, {920, 2470}}";
+			sepNavSelRange = "{685, 0}";
+			sepNavVisRange = "{0, 1151}";
 		};
 	};
 	5CF67D0D119F230E001A3FEF /* songs.html.erb */ = {
