@@ -32,8 +32,10 @@ class Song < ActiveRecord::Base
 	song_tags = extract_mp3_tags( tempfile.path ) 
 	
 	# Get Amazon.com album art jpeg url for song
-	album_art_url = get_album_art_url( song_tags.artist + song_tags.album )
-	puts album_art_url
+	if( song_tag.artist + song_tag.album )
+	  album_art_url = get_album_art_url( song_tags.artist + song_tags.album )
+	  puts album_art_url
+	end
 	
 	# Download album art jpeg
 	jpeg_upload_filename = ""
