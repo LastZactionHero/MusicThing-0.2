@@ -26,7 +26,7 @@
 		periodic_refresh();
 		refresh_player();
 	} // startup()
-
+	
 	
 	//----------------------------------------------
 	// Register for Quicktime Player callbacks
@@ -161,7 +161,9 @@
 		}
 		else
 		{
-			document.getElementById( "divUploadButton" ).innerHTML = "<a href=\"javascript:toggle_upload_box()\">Upload</a>";
+			uploadHtmlStr = "<a href=\"javascript:toggle_upload_box()\">Upload</a>";
+			uploadHtmlStr = uploadHtmlStr + <%= "\"<br><a href=\'http://www.allweapons.net/musicthing/playlist/#{session[:playlist_address]}.pls.txt\'>Export .pls</a>\"" %>;
+			document.getElementById( "divUploadButton" ).innerHTML = uploadHtmlStr;
 		}
 	} // update_uploader_button()
 	

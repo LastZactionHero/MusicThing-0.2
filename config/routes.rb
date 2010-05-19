@@ -13,7 +13,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :playlists
   
   map.song_direct '/:address', :controller => 'songs', :action => 'viewer', :address => ":address"
-  
+  map.song_direct_pls '/:address/playlist.pls', :controller => 'songs', :action => "export_playlist"
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

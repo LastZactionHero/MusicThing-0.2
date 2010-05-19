@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		5C2AFE2F11A3773D00052F2E /* export_playlist.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = export_playlist.erb; sourceTree = "<group>"; };
 		5CBA96E411A0A26E005456E1 /* playlist_home.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = playlist_home.css; sourceTree = "<group>"; };
 		5CBA96E511A0A8AF005456E1 /* playlists_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = playlists_controller.rb; sourceTree = "<group>"; };
 		5CBA96E811A0A997005456E1 /* edit.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = edit.html.erb; sourceTree = "<group>"; };
@@ -209,6 +210,7 @@
 				5CF67D96119F4FCC001A3FEF /* uploader_complete.html.erb */,
 				5CF67D97119F55B6001A3FEF /* playlist_generate.html.erb */,
 				5CF67D99119F6093001A3FEF /* player_generate.html.erb */,
+				5C2AFE2F11A3773D00052F2E /* export_playlist.erb */,
 			);
 			path = songs;
 			sourceTree = "<group>";

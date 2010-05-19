@@ -21734,3 +21734,2230 @@ Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-17 00:29:31
 Rendering template within layouts/songs
 Rendering songs/player_generate
 Completed in 20ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/player_generate/quicktime/1]
+
+
+Processing PlaylistsController#home (for 127.0.0.1 at 2010-05-18 20:13:57) [GET]
+Rendering template within layouts/playlists
+Rendering playlists/home
+Completed in 114ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PlaylistsController#start (for 127.0.0.1 at 2010-05-18 20:14:27) [POST]
+  Parameters: {"commit"=>"Start!", "authenticity_token"=>"0gLzL4VGXZ4MVgnCXQfC7khe2cGBZNR96G43OfJYHEw=", "playlist"=>{"title"=>"test pa"}}
+  [4;36;1mPlaylist Create (0.7ms)[0m   [0;1mINSERT INTO "playlists" ("address", "created_at", "title", "updated_at", "time") VALUES('NDgMjQ', '2010-05-19 01:14:28', 'test pa', '2010-05-19 01:14:28', '2010-05-19 01:14:27')[0m
+Redirected to http://localhost:3000/NDgMjQ
+Completed in 667ms (DB: 1) | 302 Found [http://localhost/playlists/start]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:14:28) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.6ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 37ms (View: 25, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:14:28) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 51ms (View: 48, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:14:28) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 233ms (View: 102, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:14:28) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (1.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 47ms (View: 27, DB: 2) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:14:53) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5443-18xt6te-0>}
+  [4;36;1mSong Load (1.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `song_tag' for #<Class:0x2db6224>):
+  app/models/song.rb:37:in `upload_file'
+  app/controllers/songs_controller.rb:111:in `uploader_process'
+
+Rendered rescues/_trace (54.1ms)
+Rendered rescues/_request_and_response (3.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:14:58) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (1.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:15:28) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (1.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 18ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:15:58) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:16:09) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.5ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 13ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:16:09) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:16:09) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:16:09) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (2.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 20ms (View: 1, DB: 2) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:16:25) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.7ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 13ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:16:25) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:16:25) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:16:25) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (2.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 20ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:16:55) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (1.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:17:01) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5443-1w90suj-0>}
+  [4;36;1mSong Load (1.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.7ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:17:03', 'Bring Him Here', 'Anonymous', '2010-05-19 01:17:03', 'Unknown Album', 'http://www.allweapons.net/musicthing/9Bring-Him-Here.mp3', 0)[0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 2568ms (DB: 3) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:17:03) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:17:03) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:17:03) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.4ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:17:24) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.6ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 13ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:17:24) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:17:24) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 23ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:17:24) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (2.5ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:17:36) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.7ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 13ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:17:36) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:17:37) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:17:37) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (2.2ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 21ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:18:07) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 18ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:18:13) [POST]
+  Parameters: {"submitter_name"=>"Zach", "data_file"=>#<File:/tmp/RackMultipart20100518-5443-1qyaxh9-0>}
+  [4;35;1mSong Load (2.4ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mSong Create (0.7ms)[0m   [0mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Z-Ro', 'NDgMjQ', '', '2010-05-19 01:19:17', 'Smoker''s Anthem Screwed and Ch', 'Zach', '2010-05-19 01:19:17', 'Unknown Album', 'http://www.allweapons.net/musicthing/1001-Smoker''s-Anthem-Screwed-and-Ch.mp3', 1)[0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 64500ms (DB: 3) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:19:17) [POST]
+  Parameters: {"submitter_name"=>"Zach", "data_file"=>#<File:/tmp/RackMultipart20100518-5443-12p9o05-0>}
+  [4;36;1mSong Load (2.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.7ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Z-Ro', 'NDgMjQ', '', '2010-05-19 01:20:22', 'Smoker''s Anthem Screwed and Ch', 'Zach', '2010-05-19 01:20:22', 'Unknown Album', 'http://www.allweapons.net/musicthing/1101-Smoker''s-Anthem-Screwed-and-Ch.mp3', 2)[0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 64469ms (DB: 3) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-05-18 20:20:22) [GET]
+  [4;35;1mSong Load (3.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/index
+Completed in 254ms (View: 201, DB: 4) | 200 OK [http://localhost/songs]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:20:22) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (11.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 116ms (View: 88, DB: 12) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:20:22) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:20:22) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:20:22) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:20:22) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.8ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 43ms (View: 24, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:20:23) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.4ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:20:23) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.4ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:20:37) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:20:40) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5443-117qcmc-0>}
+  [4;36;1mSong Load (2.3ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.7ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:21:00', 'Getting into the Jam', 'Anonymous', '2010-05-19 01:21:00', 'Unknown Album', 'http://www.allweapons.net/musicthing/1205-Getting-into-the-Jam.mp3', 3)[0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 19997ms (DB: 3) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:21:00) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:21:01) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:21:01) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.5ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 28ms (View: 4, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:21:07) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.5ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:21:37) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.4ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 2) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:21:38) [POST]
+  Parameters: {"submitter_name"=>"Zach", "data_file"=>#<File:/tmp/RackMultipart20100518-5443-1a28sfs-0>}
+  [4;36;1mSong Load (2.5ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.9ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('The Von Bondies', 'NDgMjQ', 'http://www.allweapons.net/musicthing/album_art/1311-Poison-Ivy.mp3.jpg', '2010-05-19 01:22:13', 'Poison Ivy', 'Zach', '2010-05-19 01:22:13', 'Pawn Shoppe Heart', 'http://www.allweapons.net/musicthing/1311-Poison-Ivy.mp3', 4)[0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 35552ms (DB: 3) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:22:13) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.2ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:22:13) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:22:13) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:22:13) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 27ms (View: 3, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:22:37) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.6ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:23:07) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.6ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 91ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:23:37) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.6ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:24:07) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.5ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:24:37) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.6ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:25:07) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.5ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:25:24) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.5ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 25ms (View: 13, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:25:24) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:25:24) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (2.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:25:24) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 3, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:25:32) [POST]
+  Parameters: {"submitter_name"=>"Zach", "data_file"=>#<File:/tmp/RackMultipart20100518-5443-1n4069a-0>}
+  [4;36;1mSong Load (2.8ms)[0m   [0;1mSELECT * FROM "songs" [0m
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:26:13) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.8ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 37ms (View: 24, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:26:13) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:26:14) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 111ms (View: 11, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:26:14) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (2.6ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 28ms (View: 9, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:26:32) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.6ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 15ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:26:32) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:26:32) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:26:32) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (2.6ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:27:02) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.6ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:27:32) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.6ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:28:02) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:28:18) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.5ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 25ms (View: 13, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:28:18) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:28:18) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 4, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:28:18) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (2.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 27ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:28:25) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.6ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 24ms (View: 13, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:28:25) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:28:26) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 115ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:28:26) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (2.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 24ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:28:44) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.5ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 13ms (View: 2, DB: 2) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:28:44) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:28:44) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (2.6ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:28:44) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:29:09) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.6ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 14ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:29:10) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:29:10) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (2.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:29:10) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.6ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:29:40) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.6ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:30:10) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.6ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 19ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:30:40) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.5ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#export_playlist (for 127.0.0.1 at 2010-05-18 20:30:44) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+
+ActionController::UnknownAction (No action responded to export_playlist. Actions: create, destroy, edit, index, new, player_generate, playlist_generate, setup_playlist, show, update, uploader, uploader_complete, uploader_process, and viewer):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#export_playlist (for 127.0.0.1 at 2010-05-18 20:31:22) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+
+ActionView::MissingTemplate (Missing template songs/export_playlist.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#export_playlist (for 127.0.0.1 at 2010-05-18 20:32:49) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+Rendering template within layouts/songs
+Rendering songs/export_playlist
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/NDgMjQ/playlist.pls]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:41:46) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.7ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 75ms (View: 62, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:41:47) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:41:47) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:41:47) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 37ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:41:47) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (2.8ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 27ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:41:54) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-1x0onz4-0>}
+  [4;35;1mSong Load (3.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mSong Create (0.8ms)[0m   [0mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('The Von Bondies', 'NDgMjQ', 'http://www.allweapons.net/musicthing/album_art/1411-Poison-Ivy.mp3.jpg', '2010-05-19 01:42:29', 'Poison Ivy', 'Anonymous', '2010-05-19 01:42:29', 'Pawn Shoppe Heart', 'http://www.allweapons.net/musicthing/1411-Poison-Ivy.mp3', 5)[0m
+  [4;36;1mSong Load (2.4ms)[0m   [0;1mSELECT * FROM "songs" [0m
+
+Net::FTPPermError (550 playlist/NDgMjQ.pls: The system cannot find the path specified. 
+):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/ftp.rb:243:in `getresp'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/ftp.rb:264:in `sendcmd'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/ftp.rb:262:in `sendcmd'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/ftp.rb:321:in `transfercmd'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/ftp.rb:450:in `storbinary'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/ftp.rb:448:in `storbinary'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/ftp.rb:560:in `putbinaryfile'
+  app/models/song.rb:147:in `upload_to_ftp'
+  app/models/song.rb:70:in `upload_file'
+  app/controllers/songs_controller.rb:111:in `uploader_process'
+
+Rendered rescues/_trace (59.6ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:42:31) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:42:47) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:43:17) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:43:30) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.7ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 13ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:43:30) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:43:30) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:43:30) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 23ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:43:30) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (2.8ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 23ms (View: 3, DB: 3) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:43:36) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-1bec7ot-0>}
+  [4;35;1mSong Load (2.7ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mSong Create (65.1ms)[0m   [0mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:43:38', 'Bring Him Here', 'Anonymous', '2010-05-19 01:43:38', 'Unknown Album', 'http://www.allweapons.net/musicthing/15Bring-Him-Here.mp3', 6)[0m
+  [4;36;1mSong Load (3.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 3581ms (DB: 71) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:43:39) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:43:39) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:43:39) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 24ms (View: 3, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:44:00) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (2.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 105ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:44:30) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (2.9ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:44:54) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-1we941r-0>}
+  [4;36;1mSong Load (3.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.6ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:44:56', 'Bring Him Here', 'Anonymous', '2010-05-19 01:44:56', 'Unknown Album', 'http://www.allweapons.net/musicthing/16Bring-Him-Here.mp3', 7)[0m
+  [4;35;1mSong Load (3.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 3422ms (DB: 7) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:44:58) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:44:58) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:44:58) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.3ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 26ms (View: 3, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:45:00) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:45:30) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:45:38) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-mxqi1h-0>}
+  [4;35;1mSong Load (3.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mSong Create (0.7ms)[0m   [0mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:45:40', 'Bring Him Here', 'Anonymous', '2010-05-19 01:45:40', 'Unknown Album', 'http://www.allweapons.net/musicthing/17Bring-Him-Here.mp3', 8)[0m
+  [4;36;1mSong Load (3.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 2595ms (DB: 7) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:45:41) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:45:41) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:45:41) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.4ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 25ms (View: 4, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:46:00) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:46:02) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-13m3muj-0>}
+  [4;35;1mSong Load (3.2ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mSong Create (0.7ms)[0m   [0mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:46:05', 'Bring Him Here', 'Anonymous', '2010-05-19 01:46:05', 'Unknown Album', 'http://www.allweapons.net/musicthing/18Bring-Him-Here.mp3', 9)[0m
+  [4;36;1mSong Load (4.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 2501ms (DB: 8) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:46:05) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:46:05) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.4ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:46:05) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:46:30) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.4ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:47:00) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 48ms (View: 3, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:47:30) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.3ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:48:00) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:48:16) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-14x11i8-0>}
+  [4;36;1mSong Load (3.3ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.6ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:48:18', 'Bring Him Here', 'Anonymous', '2010-05-19 01:48:18', 'Unknown Album', 'http://www.allweapons.net/musicthing/19Bring-Him-Here.mp3', 10)[0m
+  [4;35;1mSong Load (4.1ms)[0m   [0mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 2397ms (DB: 8) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:48:18) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:48:18) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:48:18) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.4ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 24ms (View: 4, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:48:30) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.4ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:48:44) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-1h6faet-0>}
+  [4;36;1mSong Load (3.8ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.6ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:48:47', 'Bring Him Here', 'Anonymous', '2010-05-19 01:48:47', 'Unknown Album', 'http://www.allweapons.net/musicthing/20Bring-Him-Here.mp3', 11)[0m
+  [4;35;1mSong Load (3.5ms)[0m   [0mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 2514ms (DB: 8) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:48:47) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:48:47) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.6ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:48:47) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:49:00) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 25ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:49:06) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-1e7h7g7-0>}
+  [4;36;1mSong Load (3.7ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.6ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:49:08', 'Bring Him Here', 'Anonymous', '2010-05-19 01:49:08', 'Unknown Album', 'http://www.allweapons.net/musicthing/21Bring-Him-Here.mp3', 12)[0m
+
+EOFError (end of file reached):
+  app/models/song.rb:69:in `upload_file'
+  app/controllers/songs_controller.rb:111:in `uploader_process'
+
+Rendered rescues/_trace (51.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:49:30) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.8ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:49:59) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.6ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 13ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:49:59) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:49:59) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:49:59) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (3.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 27ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:49:59) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (3.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 24ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:50:05) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-1spmf5f-0>}
+  [4;35;1mSong Load (3.9ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mSong Create (0.7ms)[0m   [0mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:50:07', 'Bring Him Here', 'Anonymous', '2010-05-19 01:50:07', 'Unknown Album', 'http://www.allweapons.net/musicthing/22Bring-Him-Here.mp3', 13)[0m
+  [4;36;1mSong Load (4.3ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 2417ms (DB: 9) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:50:07) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:50:07) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 24ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:50:07) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:50:28) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-1d97aw-0>}
+  [4;36;1mSong Load (3.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.6ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:50:31', 'Bring Him Here', 'Anonymous', '2010-05-19 01:50:31', 'Unknown Album', 'http://www.allweapons.net/musicthing/23Bring-Him-Here.mp3', 14)[0m
+  [4;35;1mSong Load (4.5ms)[0m   [0mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 2673ms (DB: 9) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:50:31) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (6.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 30ms (View: 3, DB: 7) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:50:31) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:50:31) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:50:31) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.7ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 26ms (View: 4, DB: 5) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:50:59) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (4.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:51:24) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.5ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 100ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:51:24) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:51:24) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:51:24) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (4.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 29ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:51:24) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (4.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 27ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:51:54) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:52:24) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:52:54) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:53:24) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 22ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:53:54) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (3.9ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 24ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:53:55) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.5ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 13ms (View: 2, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:53:56) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:53:56) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:53:56) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (4.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 24ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:53:56) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (4.8ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 25ms (View: 2, DB: 5) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 20:54:02) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-1giviy6-0>}
+  [4;36;1mSong Load (4.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.7ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 01:54:05', 'Bring Him Here', 'Anonymous', '2010-05-19 01:54:05', 'Unknown Album', 'http://www.allweapons.net/musicthing/24Bring-Him-Here.mp3', 15)[0m
+  [4;35;1mSong Load (3.8ms)[0m   [0mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 3733ms (DB: 9) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 20:54:06) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:54:06) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (4.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 23ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:54:06) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:54:26) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.1ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 23ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:54:56) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (4.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 24ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:55:26) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.2ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 23ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:55:56) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (4.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 115ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:56:26) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.1ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 24ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:56:56) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (4.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 23ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:57:08) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.7ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 25ms (View: 14, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:57:08) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:57:08) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:57:37) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.5ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 32ms (View: 17, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:57:37) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:57:37) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:58:12) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.6ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 25ms (View: 14, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:58:13) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:58:13) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:58:29) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.7ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 25ms (View: 13, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:58:29) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:58:29) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:58:29) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.2ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 23ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:58:29) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (4.3ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 36ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:58:52) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (2.6ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 25ms (View: 13, DB: 3) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:58:52) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:58:52) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:58:52) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (4.3ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 30ms (View: 4, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:58:52) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (6.5ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 29ms (View: 2, DB: 6) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:59:22) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (7.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 27ms (View: 3, DB: 7) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:59:26) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (5.9ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 32ms (View: 14, DB: 6) | 200 OK [http://localhost/NDgMjQ/]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 20:59:26) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 17ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-18 20:59:26) [GET]
+
+ActionController::RoutingError (No route matches "/NDgMjQ/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 20:59:26) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (5.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 27ms (View: 4, DB: 5) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 20:59:26) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (4.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 29ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 20:59:54) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.7ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+ERROR: compiling _run_erb_app47views47songs47viewer46html46erb RAISED compile error
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: syntax error, unexpected '}', expecting ']'
+...on[session[:playlist_address]}.pls\'>Export .pls</a>\"" ).to...
+                              ^
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: syntax error, unexpected tIDENTIFIER, expecting '}'
+...tElementById( 'divPlaylistList' ).innerHTML = gRequestRefres...
+                              ^
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: syntax error, unexpected tIDENTIFIER, expecting '}'
+...ent.getElementById( 'divPlayer' ).innerHTML = gRequestRefres...
+                              ^
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: unterminated string meets end of file
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: syntax error, unexpected $end, expecting '}'
+Function body:           def _run_erb_app47views47songs47viewer46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( stylesheet_link_tag "viewer" ).to_s); @output_buffer.concat "\n\n<body onLoad=\"javascript:startup()\">\n\n<script type=\"text/javascript\">\n\n\t//----------------------------------------------\n\t// Global Variables\n\t//----------------------------------------------\n\tgUploadBoxVisible = false;\n\tgIsUploading = false;\n\tgPeriodCount = 0;\n\tgRequestRefreshPlayist = null;\n\tgRequestRefreshPlayer = null;\n\tgCurrentTrackIdx = 0;\n\tgBrowser = \"Other\"\n\t\n\t\t\t\n\t//----------------------------------------------\n\t// Page Startup Functions\n\t//----------------------------------------------\n\tfunction startup()\n\t{\n\t\tbrowser_detect();\n\t\tupdate_uploader_button();\n\t\tperiodic_refresh();\n\t\trefresh_player();\n\t} // startup()\n\t\n\t\n\t//----------------------------------------------\n\t// Register for Quicktime Player callbacks\n\t//----------------------------------------------\n\tfunction register_quicktime_player()\n\t{\n\t\tif( document.getElementById( \"quicktime_audio_player\" ) )\n\t\t{ \n\t\t\tdocument.getElementById( \"quicktime_audio_player\" ).addEventListener( 'qt_ended', quicktime_player_ended_callback, false ); \n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetTimeout( \"register_quicktime_player()\", 500 );\n\t\t}\n\t} // register_quicktime_player()\n\t\n\t\n\t//----------------------------------------------\n\t// Quicktime Player Track Ended Callback\n\t//----------------------------------------------\n\tfunction quicktime_player_ended_callback()\n\t{\n\t\tdocument.getElementById( 'divPlayer' ).innerHTML = \"\";\n\t\tnext_track();\n\t} // quicktime_player_ended_callback()\n\t\n\t\n\t//----------------------------------------------\n\t// Detect Current Browser\n\t//----------------------------------------------\n\tfunction browser_detect()\n\t{\n\t\tif( navigator.userAgent.indexOf( \"Firefox\" ) != -1 )\n\t\t{\n\t\t\tgBrowser = \"Firefox\";\n\t\t}\n\t\telse if( navigator.userAgent.indexOf( \"Chrome\" ) != -1 )\n\t\t{\n\t\t\tgBrowser = \"Chrome\";\n\t\t}\n\t\telse if( navigator.userAgent.indexOf( \"Internet Explorer\" ) != -1 )\n\t\t{\n\t\t\tgBrowser = \"Internet Explorer\";\n\t\t}\n\t\telse if( navigator.userAgent.indexOf( \"Safari\" ) != -1 )\n\t\t{\n\t\t\tgBrowser = \"Safari\";\n\t\t}\n\t\telse\n\t\t{\n\t\t\tgBrowser = \"Other\";\n\t\t}\n\t} // browser_detect()\n\t\n\t//----------------------------------------------\n\t// Does this current browser support HTML5\n\t// MP3 Audio?\n\t//----------------------------------------------\n\tfunction use_html5_audio()\n\t{\n\t\tif( gBrowser == \"Chrome\" || gBrowser == \"Safari\" ) return true;\n\t\treturn false;\n\t}\n\t\n\t//----------------------------------------------\n\t// Toggle visibility state of upload track box\n\t//----------------------------------------------\n\tfunction toggle_upload_box()\n\t{\n\t\tif( gUploadBoxVisible == false && gIsUploading == false )\n\t\t{\n\t\t\tgUploadBoxVisible = true;\n\t\t\tdocument.getElementById( \"divUploadBox\" ).style.visibility = \"visible\";\n\t\t}\n\t\telse\n\t\t{\n\t\t\tgUploadBoxVisible = false;\n\t\t\tdocument.getElementById( \"divUploadBox\" ).style.visibility = \"hidden\";\n\t\t}\n\t} // toggle_upload_box()\n\n\n\t//----------------------------------------------\n\t// Set page state as uploading\n\t//----------------------------------------------\n\tfunction set_as_uploading()\n\t{\n\t\tif( gUploadBoxVisible == true ) toggle_upload_box();\n\t\tgIsUploading = true;\n\t\tupdate_uploader_button();\n\t} // set_as_uploading()\n\t\n\t\n\t//----------------------------------------------\n\t// Set Page State as upload complete\n\t//----------------------------------------------\n\tfunction set_as_upload_complete()\n\t{\n\t\tgIsUploading = false;\n\t\tupdate_uploader_button();\n\t\trefresh_playlist();\n\t} // set_as_upload_complete()\n\t\n\t\n\t//----------------------------------------------\n\t// Set the current track\n\t//----------------------------------------------\n\tfunction set_track_idx( idx )\n\t{\n\t\tgCurrentTrackIdx = idx;\n\t\trefresh_playlist();\n\t\trefresh_player();\n\t} // set_track_idx()\n\t\n\t\n\t//----------------------------------------------\n\t// Update content of Upload button\n\t//----------------------------------------------\n\tfunction update_uploader_button()\n\t{\n\t\tif( gIsUploading == true )\n\t\t{\n\t\t\tuploadingStr = \"Uploading\";\n\t\t\tfor( i = 0; i < gPeriodCount; i++ )\n\t\t\t{\n\t\t\t\tuploadingStr = uploadingStr + \".\";\n\t\t\t}\n\t\t\tdocument.getElementById( \"divUploadButton\" ).innerHTML = uploadingStr;\n\t\t\t\n\t\t\tgPeriodCount = ( gPeriodCount + 1 ) % 4;\n\t\t\tsetTimeout( \"update_uploader_button()\", 500 );\n\t\t}\n\t\telse\n\t\t{\n\t\t\tuploadHtmlStr = \"<a href=\\\"javascript:toggle_upload_box()\\\">Upload</a>\";\n\t\t\tuploadHtmlStr = uploadHtmlStr + "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( "\"<br><a href=\'http://www.allweapons.net/musicthing/playlist/#{session[session[:playlist_address]}.pls\'>Export .pls</a>\"" ).to_s); @output_buffer.concat ";\n\t\t\tdocument.getElementById( \"divUploadButton\" ).innerHTML = uploadHtmlStr;\n\t\t}\n\t} // update_uploader_button()\n\t\n\t\n\t//----------------------------------------------\n\t// Send request to refresh playlist\n\t//----------------------------------------------\n\tfunction refresh_playlist()\n\t{\n\t\t// Send request for playlist generation\n\t\tgRequestRefreshPlaylist = new XMLHttpRequest();\n\t\t\n\t\tif( gRequestRefreshPlaylist != null )\n\t\t{\n\t\t\trequestUrl = \"/songs/playlist_generate/\" + gCurrentTrackIdx;\n\t\t\tgRequestRefreshPlaylist.onreadystatechange = refresh_playlist_callback;\n\t\t\tgRequestRefreshPlaylist.open( \"GET\", requestUrl, true );\n\t\t\tgRequestRefreshPlaylist.send();\n\t\t}\n\t\telse\n\t\t{\n\t\t\talert( \"Error creating request!\" );\n\t\t}\n\t} // refresh_playlist()\n\t\n\t\n\t//----------------------------------------------\n\t// Callback from refresh_playlist()\n\t//----------------------------------------------\n\tfunction refresh_playlist_callback()\n\t{\n\t\tif( is_response_valid( gRequestRefreshPlaylist ) )\n\t\t{\n\t\t\tdocument.getElementById( 'divPlaylistList' ).innerHTML = gRequestRefreshPlaylist.responseText;\n\t\t\tgRequestRefreshPlaylist = null;\n\t\t}\n\t} // refresh_playlist_callback()\n\t\n\t\n\t//----------------------------------------------\n\t// Send request to refresh player\n\t//----------------------------------------------\n\tfunction refresh_player()\n\t{\n\t\t// Send request for player generation\n\t\tgRequestRefreshPlayer = new XMLHttpRequest();\n\t\t\n\t\tif( gRequestRefreshPlayer != null )\n\t\t{\n\t\t\trequestUrl = \"/songs/player_generate/\";\n\t\t\tif( use_html5_audio() )\n\t\t\t{\n\t\t\t\trequestUrl = requestUrl + \"html5/\";\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\trequestUrl = requestUrl += \"quicktime/\";\n\t\t\t}\n\n\t\t\trequestUrl = requestUrl + gCurrentTrackIdx;\n\t\t\tgRequestRefreshPlayer.onreadystatechange = refresh_player_callback;\n\t\t\tgRequestRefreshPlayer.open( \"GET\", requestUrl, true );\n\t\t\tgRequestRefreshPlayer.send();\n\t\t}\n\t\telse\n\t\t{\n\t\t\talert( \"Error creating request!\" );\n\t\t}\n\t} // refresh_player()\n\t\n\t\n\t//----------------------------------------------\n\t// Callback from refresh_player()\n\t//----------------------------------------------\n\tfunction refresh_player_callback()\n\t{\n\t\tif( is_response_valid( gRequestRefreshPlayer ) )\n\t\t{\n\t\t\tdocument.getElementById( 'divPlayer' ).innerHTML = gRequestRefreshPlayer.responseText;\n\t\t\tgRequestRefreshPlayer = null;\n\t\t\t\t\n\t\t\tif( use_html5_audio() == false ) register_quicktime_player();\t\t\n\t\t}\n\t} // refresh_player_callback()\n\t\n\t\n\t//-------------------------------------------\n\t// Is HTML Response Valid\n\t//-------------------------------------------\n\tfunction is_response_valid( response )\n\t{\n\t\tret = false;\n\t\t\n\t\tif( response != null\n\t\t    && response.status == 200\n\t\t\t&& response.readyState == 4 )\n\t\t{\n\t\t\tret = true;\n\t\t}\n\t\t\n\t\treturn ret;\n\t} // is_response_valid()\n\t\n\t\n\t//-------------------------------------------\n\t// Forward to next track\n\t//-------------------------------------------\n\tfunction next_track()\n\t{\n\t\tset_track_idx( gCurrentTrackIdx + 1 );\n\t} // next_track()\n\t\n\t\n\t//-------------------------------------------\n\t// Periodically call playlist refresh \n\t//-------------------------------------------\t\n\tfunction periodic_refresh()\n\t{\n\t\trefresh_playlist();\n\t\tsetTimeout( \"periodic_refresh()\", 30000 );\n\t} // periodic_refresh()\n\t\n</script>\n\n\n\n<div class=\"playlistBackground\" >\n\n\t<div class=\"logoBox\">\n\t\t<img src=\"images/logo.png\">\n\t</div>\n\t\n\t<div class=\"playlistTitle\">\n\t  "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( "#{@playlist_title}" ).to_s); @output_buffer.concat "\n\t</div>\n\t\n\t<div class=\"playlistList\" id=\"divPlaylistList\">\n\t\n\t</div>\n\t\n\t<div class=\"bottomBox\">\n\t\t<div id=\"divPlayer\"></div>\n\t</div>\n\t\n\t<div class=\"uploadButton\" id=\"divUploadButton\"></div>\n\t\n\t<div class=\"uploadBox\" id=\"divUploadBox\" style=\"visibility:hidden\">\n\t\t<iframe src=\"/songs/uploader/\" frameborder=0 height=100 width=350 scrolling=no marginheight=0 marginwidth=0 align=top>\n\t</div>\n\t\n</div>\n\n</body>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165:in `compile!'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/zachdicklin/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/zachdicklin/.gem/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: syntax error, unexpected '}', expecting ']'
+...on[session[:playlist_address]}.pls\'>Export .pls</a>\"" ).to...
+                              ^
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: syntax error, unexpected tIDENTIFIER, expecting '}'
+...tElementById( 'divPlaylistList' ).innerHTML = gRequestRefres...
+                              ^
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: syntax error, unexpected tIDENTIFIER, expecting '}'
+...ent.getElementById( 'divPlayer' ).innerHTML = gRequestRefres...
+                              ^
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: unterminated string meets end of file
+/Users/zachdicklin/www/musicthing0.2/app/views/songs/viewer.html.erb:165: syntax error, unexpected $end, expecting '}') on line #165 of app/views/songs/viewer.html.erb:
+162: 		else
+163: 		{
+164: 			uploadHtmlStr = "<a href=\"javascript:toggle_upload_box()\">Upload</a>";
+165: 			uploadHtmlStr = uploadHtmlStr + <%= "\"<br><a href=\'http://www.allweapons.net/musicthing/playlist/#{session[session[:playlist_address]}.pls\'>Export .pls</a>\"" %>;
+166: 			document.getElementById( "divUploadButton" ).innerHTML = uploadHtmlStr;
+167: 		}
+168: 	} // update_uploader_button()
+
+    app/views/songs/viewer.html.erb:165:in `compile!'
+
+Rendered rescues/_trace (153.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 21:00:13) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;35;1mPlaylist Load (3.3ms)[0m   [0mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 27ms (View: 13, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 21:00:13) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 21:00:13) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;36;1mSong Load (4.5ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 26ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 21:00:13) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.3ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 25ms (View: 3, DB: 4) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 21:00:26) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-udh97c-0>}
+  [4;36;1mSong Load (4.1ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mSong Create (0.7ms)[0m   [0;1mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 02:00:28', 'Bring Him Here', 'Anonymous', '2010-05-19 02:00:28', 'Unknown Album', 'http://www.allweapons.net/musicthing/25Bring-Him-Here.mp3', 16)[0m
+  [4;35;1mSong Load (4.0ms)[0m   [0mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 3932ms (DB: 9) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 21:00:30) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 21:00:30) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing PlaylistsController#home (for 127.0.0.1 at 2010-05-18 21:04:18) [GET]
+Rendering template within layouts/playlists
+Rendering playlists/home
+Completed in 58ms (View: 56, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SongsController#viewer (for 127.0.0.1 at 2010-05-18 21:06:56) [GET]
+  Parameters: {"address"=>"NDgMjQ"}
+  [4;36;1mPlaylist Load (2.6ms)[0m   [0;1mSELECT * FROM "playlists" [0m
+Rendering template within layouts/songs
+Rendering songs/viewer
+Completed in 107ms (View: 96, DB: 3) | 200 OK [http://localhost/NDgMjQ]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 21:06:56) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/songs/uploader/]
+
+
+Processing SongsController#player_generate (for 127.0.0.1 at 2010-05-18 21:06:57) [GET]
+  Parameters: {"player"=>"html5", "id"=>"0"}
+  [4;35;1mSong Load (4.4ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/player_generate
+Completed in 27ms (View: 2, DB: 4) | 200 OK [http://localhost/songs/player_generate/html5/0]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 21:06:57) [GET]
+  Parameters: {"id"=>"0"}
+  [4;36;1mSong Load (6.4ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 30ms (View: 3, DB: 6) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader_process (for 127.0.0.1 at 2010-05-18 21:07:03) [POST]
+  Parameters: {"submitter_name"=>"", "data_file"=>#<File:/tmp/RackMultipart20100518-5530-1saywhj-0>}
+  [4;35;1mSong Load (4.3ms)[0m   [0mSELECT * FROM "songs" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "songs" [0m
+  [4;35;1mSong Create (0.6ms)[0m   [0mINSERT INTO "songs" ("artist", "address", "art_filename", "created_at", "title", "submitter_name", "updated_at", "album", "filename", "playlist_idx") VALUES('Unknown Artist', 'NDgMjQ', '', '2010-05-19 02:07:06', 'Bring Him Here', 'Anonymous', '2010-05-19 02:07:06', 'Unknown Album', 'http://www.allweapons.net/musicthing/26Bring-Him-Here.mp3', 17)[0m
+  [4;36;1mSong Load (4.2ms)[0m   [0;1mSELECT * FROM "songs" [0m
+Redirected to http://localhost:3000/songs/uploader_complete
+Completed in 4070ms (DB: 9) | 302 Found [http://localhost/songs/uploader_process/]
+
+
+Processing SongsController#uploader_complete (for 127.0.0.1 at 2010-05-18 21:07:07) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader_complete
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/songs/uploader_complete]
+
+
+Processing SongsController#playlist_generate (for 127.0.0.1 at 2010-05-18 21:07:07) [GET]
+  Parameters: {"id"=>"0"}
+  [4;35;1mSong Load (4.5ms)[0m   [0mSELECT * FROM "songs" [0m
+Rendering template within layouts/songs
+Rendering songs/playlist_generate
+Completed in 26ms (View: 3, DB: 5) | 200 OK [http://localhost/songs/playlist_generate/0]
+
+
+Processing SongsController#uploader (for 127.0.0.1 at 2010-05-18 21:07:07) [GET]
+Rendering template within layouts/songs
+Rendering songs/uploader
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/songs/uploader/]

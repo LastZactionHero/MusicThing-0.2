@@ -106,8 +106,8 @@ class PlaylistsController < ApplicationController
 	session[:playlist_address] = address
 	puts "session address: #{session[:playlist_address]}"
 	
-	redirect_to "http://musicthing.heroku.com/" + address
-	#redirect_to "http://localhost:3000/" + address
+	#redirect_to "http://musicthing.heroku.com/" + address
+	redirect_to "http://localhost:3000/" + address
   end
   
 end

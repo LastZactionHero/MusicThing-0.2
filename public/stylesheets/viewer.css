@@ -66,15 +66,15 @@ a:active {
   top:				505px;
   left:				375px;
   width:			125px;
-  height:			20px;
+  height:			40px;
   position:			absolute;
   overflow:			hidden;
   background-color:	#65A3D7;
   color:			white;
   font-family:		Verdana;
-  font-size:		20px; 
+  font-size:		16px; 
   text-align:		left;
-  line-height:		15px;
+  line-height:		18px;
 }
 
 .uploadBox {

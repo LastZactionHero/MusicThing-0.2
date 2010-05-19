@@ -145,4 +145,9 @@ class SongsController < ApplicationController
 	puts "Filename: #{@filename}\n"
   end
 
+  # Export playlist file
+  def export_playlist
+  
+  end
+  
 end

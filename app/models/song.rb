@@ -34,7 +34,7 @@ class Song < ActiveRecord::Base
 	
 	# Get Amazon.com album art jpeg url for song
 	album_art_url = ""
-	if( song_tag.artist && song_tag.album )
+	if( song_tags.artist && song_tags.album )
 	  album_art_url = get_album_art_url( song_tags.artist + song_tags.album )
 	  puts album_art_url
 	end
@@ -63,12 +63,45 @@ class Song < ActiveRecord::Base
 	@song.address = playlist_address
 	@song.save
 	
+	# Generate .pls file
+	tempfile_pls = Tempfile.new( 'pls_file' )
+	playlist = Song.all.select{ |song| song.address == playlist_address }
+	generate_playlist( playlist, tempfile_pls )
+	puts tempfile_pls.readlines
+	
+	upload_to_ftp( tempfile_pls.path, "playlist/" + playlist_address + ".pls.txt" )
+	tempfile_pls.close
+	
 	# Clean up
 	tempfile.close
 	
   end
+
+
+  # Write playlist to file	
+  def self.generate_playlist( playlist, file )
+    file.puts "[playlist]"
+	file.puts "\n"
 	
+	idx = 0
+	playlist.each do |song|
+
+	  idx = idx + 1
+	  
+	  file.write "File" + idx.to_s + "=" + song.filename + "\n"
+	  file.write "Title" + idx.to_s + "=" + song.title + "\n"
+	  file.write "Artist" + idx.to_s + "=" + song.artist + "\n"
+	  file.write "Album" + idx.to_s + "=" + song.album + "\n"
+	  file.write "Length" + idx.to_s + "=-1"  + "\n"
+	  file.write "\n"
 	
+	end
+	
+	file.puts "NumberOfEntries=" + idx.to_s
+
+  end
+  
+  
   # Extract MP3 Tag Information
   def self.extract_mp3_tags( input_filename )
   	mp3 = Mp3Info.open( input_filename )
@@ -105,6 +138,8 @@ class Song < ActiveRecord::Base
   
   # Upload file to FTP server
   def self.upload_to_ftp( input_filename, output_filename )
+	puts "Input Filename: #{input_filename}"
+	puts "Output Filename: #{output_filename}"
 	
     # Connect to FTP
     ftp = Net::FTP.new
